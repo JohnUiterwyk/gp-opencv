@@ -1,2 +1,2 @@
 # gp-opencv
-Genetic programming using OpenCV
+Genetic programming using RMITGP and OpenCV
