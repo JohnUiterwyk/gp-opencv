@@ -1,6 +1,7 @@
 .SUFFIXES: .cpp $(SUFFIXES)
 
-CC = mpiCC 
+CC = mpicc 
+#CC = mpiCC 
 #CC = /usr/local/pkg/gcc-3-1/bin/g++
 #CC = cxx                               #FOR VPAC
 CFLAGS = -g -ansi -pedantic -Wall

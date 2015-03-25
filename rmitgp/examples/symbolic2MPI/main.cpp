@@ -9,15 +9,7 @@ using namespace std;
 #include "NodeSet.h"
 #include "ProgramGenerator.h"
 
-#include "PlusDouble.h"
-#include "MinusDouble.h"
-#include "MultDouble.h"
-#include "DivideDouble.h"
-
-#include "XDouble.h"
-#include "RandDouble.h"
-
-#include "ReturnDouble.h"
+#include "symbols.h"
 
 #include "SymbolicFitness.h"
 
@@ -36,13 +28,16 @@ int main (int argc, char* argv[])
 {
    GPConfig symConfig;
    
-   int Pop_Size = 5000;
-   int Initial_Popsize = 5000;
+   int Pop_Size = 100;
+   int Initial_Popsize = 100;
    
    int processID = 0; // for MPI processing, sets the processor ID to 0;
 
+   cout << "Starting" << endl;
+
 #ifdef MPI_ENABLED	//MPI initialization if -D MPI_ENABLED is true
-	int processSize = 0; 
+   cout << "MPI_ENABLED" << endl;
+   int processSize = 0;
     MPI_Init (&argc, &argv);
     MPI_Comm_size(MPI_COMM_WORLD, &processSize);
     MPI_Comm_rank(MPI_COMM_WORLD, &processID);
@@ -55,9 +50,9 @@ int main (int argc, char* argv[])
    string s1;
   
    //Set the rates of mutation etc 
-   pop.setMutationRate(0.28);
+   pop.setMutationRate(0.26);
    pop.setCrossoverRate(0.70);
-   pop.setElitismRate(0.02);
+   pop.setElitismRate(0.04);
 
    //Set the return type for our programs
    pop.setReturnType(ReturnDouble::TYPENUM);
@@ -67,11 +62,11 @@ int main (int argc, char* argv[])
    symConfig.minDepth = 1;
 
    //Set the depth limit for the population
-   pop.setDepthLimit(symConfig.maxDepth);
+   pop.setDepthLimit(4);
    pop.setMinDepth(symConfig.minDepth);
 
    //Write out the population every N generations
-   pop.setLogFrequency(100);
+   pop.setLogFrequency(10);
 
 #ifdef UNIX
    pop.compressGenerationFiles(true);
@@ -82,13 +77,32 @@ int main (int argc, char* argv[])
 
    //Add the terminals we need 
    symConfig.termSet.addNodeToSet(ReturnDouble::TYPENUM, RandDouble::generate);
-   symConfig.termSet.addNodeToSet(ReturnDouble::TYPENUM, XDouble::generate);
+   //symConfig.termSet.addNodeToSet(ReturnUnit::TYPENUM, RandUnit::generate);
+   symConfig.termSet.addNodeToSet(ReturnImage::TYPENUM, ImageBrightness::generate);
+   symConfig.termSet.addNodeToSet(ReturnImage::TYPENUM, ImageHue::generate);
+   symConfig.termSet.addNodeToSet(ReturnImage::TYPENUM, ImageSaturation::generate);
 
    //Add the functions we need
    symConfig.funcSet.addNodeToSet(ReturnDouble::TYPENUM, PlusDouble::generate);
    symConfig.funcSet.addNodeToSet(ReturnDouble::TYPENUM, MinusDouble::generate);
    symConfig.funcSet.addNodeToSet(ReturnDouble::TYPENUM, MultDouble::generate);
    symConfig.funcSet.addNodeToSet(ReturnDouble::TYPENUM, DivideDouble::generate);
+
+   symConfig.funcSet.addNodeToSet(ReturnDouble::TYPENUM, Sigmoid::generate);
+
+   symConfig.funcSet.addNodeToSet(ReturnImage::TYPENUM, Convolve::generate);
+   symConfig.funcSet.addNodeToSet(ReturnImage::TYPENUM, Crop::generate);
+   symConfig.funcSet.addNodeToSet(ReturnImage::TYPENUM, AddScalar::generate);
+   symConfig.funcSet.addNodeToSet(ReturnImage::TYPENUM, MulScalar::generate);
+   symConfig.funcSet.addNodeToSet(ReturnImage::TYPENUM, DownSample::generate);
+   symConfig.funcSet.addNodeToSet(ReturnImage::TYPENUM, Threshold::generate);
+
+   symConfig.funcSet.addNodeToSet(ReturnKernel::TYPENUM, Kernel3x3::generate);
+
+   symConfig.funcSet.addNodeToSet(ReturnDouble::TYPENUM, Mean::generate);
+   symConfig.funcSet.addNodeToSet(ReturnDouble::TYPENUM, Min::generate);
+   symConfig.funcSet.addNodeToSet(ReturnDouble::TYPENUM, Max::generate);
+   symConfig.funcSet.addNodeToSet(ReturnDouble::TYPENUM, Stdev::generate);
 
    //Create the program generator
    symConfig.programGenerator = new ProgramGenerator(&symConfig);
@@ -128,13 +142,15 @@ int main (int argc, char* argv[])
    }
    else
    {
+	   cout << "generateInitialPopulation" << endl;
       pop.generateInitialPopulation();
+      pop.writeToFile();
    }
 
    try
    {
       string str1;
-   
+	   cout << "evolve" << endl;
       /*Do 1000 generations, returns true if solution is found
         (see fitness class*/
       if (pop.evolve(5000))

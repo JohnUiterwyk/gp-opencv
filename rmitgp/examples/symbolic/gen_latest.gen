@@ -1,0 +1,710 @@
+Population at generation 57
+File created at Thu Aug 15 15:50:24 2013
+numIndividuals 100
+depthLimit 7
+initdepthLimit 7
+minDepth 1
+returnType 1
+mutationRate 0.28
+crossoverRate 0.7
+elitismRate 0.02
+###################################
+Individual 0
+Fitness 0
+Depth 7
+Size 37
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ X (i/ (i+ X irand109) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 1
+Fitness 0
+Depth 7
+Size 37
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ X (i/ (i+ X irand126) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 2
+Fitness 1
+Depth 8
+Size 43
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 3
+Fitness 1
+Depth 8
+Size 43
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 4
+Fitness 1
+Depth 8
+Size 39
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ X (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 5
+Fitness 1
+Depth 8
+Size 49
+Range 
+Program (i+ (i- (i+ (i+ (i/ irand3 (i* X irand105)) X) (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 6
+Fitness 1
+Depth 8
+Size 47
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ (i+ X (i- X X)) X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X irand37)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 7
+Fitness 1
+Depth 8
+Size 47
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ (i+ X (i- X X)) X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X irand37)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 8
+Fitness 1
+Depth 8
+Size 43
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 9
+Fitness 1
+Depth 8
+Size 43
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 10
+Fitness 1
+Depth 8
+Size 43
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 11
+Fitness 1
+Depth 8
+Size 53
+Range 
+Program (i+ (i- (i+ (i+ X (i* irand15 (i- X X))) (i+ (i- X irand132) X)) (i/ (i+ (i+ X (i- X X)) X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 12
+Fitness 1
+Depth 8
+Size 53
+Range 
+Program (i+ (i- (i+ (i+ X (i* irand15 (i- X X))) (i+ (i- X irand132) X)) (i/ (i+ (i+ X (i- X X)) X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 13
+Fitness 1
+Depth 8
+Size 43
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ irand58 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 14
+Fitness 1
+Depth 8
+Size 43
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ irand58 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 15
+Fitness 1
+Depth 8
+Size 43
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 16
+Fitness 1
+Depth 8
+Size 43
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 17
+Fitness 1
+Depth 8
+Size 43
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 18
+Fitness 1
+Depth 7
+Size 41
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 irand114) (i* X X))))) (i+ (i+ (i/ (i* X (i/ X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 19
+Fitness 1
+Depth 8
+Size 43
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 20
+Fitness 1
+Depth 8
+Size 43
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 21
+Fitness 1
+Depth 8
+Size 47
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X (i* X (i/ X X)))))
+###################################
+Individual 22
+Fitness 1
+Depth 8
+Size 43
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ irand58 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 23
+Fitness 1
+Depth 8
+Size 43
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 24
+Fitness 1
+Depth 8
+Size 49
+Range 
+Program (i+ (i- (i+ (i+ (i/ irand3 (i* X irand105)) X) (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i/ X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 25
+Fitness 1
+Depth 8
+Size 43
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 26
+Fitness 1
+Depth 7
+Size 41
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 irand114) (i* X X))))) (i+ (i+ (i/ (i+ (i/ X irand16) X) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 27
+Fitness 1
+Depth 8
+Size 47
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ (i+ X (i- X X)) X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 28
+Fitness 1
+Depth 8
+Size 53
+Range 
+Program (i+ (i- (i+ (i+ X (i* irand15 (i- X X))) (i+ (i- X irand132) X)) (i/ (i+ (i+ X (i- X X)) X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 29
+Fitness 1
+Depth 8
+Size 47
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ (i+ X (i- X X)) X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 30
+Fitness 1
+Depth 8
+Size 43
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ (i+ X (i- X X)) X) (i+ X (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 31
+Fitness 1
+Depth 8
+Size 43
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 32
+Fitness 2
+Depth 7
+Size 41
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 X) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 33
+Fitness 2
+Depth 7
+Size 45
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ (i+ X (i- X X)) X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 irand132) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 34
+Fitness 3
+Depth 11
+Size 49
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ (i+ X (i/ (i+ irand49 (i+ X X)) (i* X X))) X)) (i/ X (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 35
+Fitness 3
+Depth 8
+Size 55
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ X (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ (i/ (i+ X (i- X X)) (i+ irand49 (i+ X X))) (i+ X X))))
+###################################
+Individual 36
+Fitness 3
+Depth 7
+Size 39
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ (i+ X (i- X X)) X) (i+ (i* X (i/ X X)) (i/ X (i* X X))))) (i+ (i+ (i/ X X) (i+ X X)) (i+ X X)))
+###################################
+Individual 37
+Fitness 3
+Depth 8
+Size 47
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ (i+ X (i- X X)) X) (i+ (i* X (i/ X X)) (i/ (i+ X (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 38
+Fitness 3
+Depth 7
+Size 39
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ X (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 39
+Fitness 3
+Depth 8
+Size 39
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ X (i/ (i+ X (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 40
+Fitness 3
+Depth 7
+Size 39
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ X (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 41
+Fitness 3
+Depth 9
+Size 45
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ X (i+ X (i- X X))) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 42
+Fitness 3
+Depth 8
+Size 39
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ X (i/ (i+ X (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 43
+Fitness 28
+Depth 8
+Size 43
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i+ irand22 irand24)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 44
+Fitness 29
+Depth 8
+Size 45
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ (i+ irand49 X) X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 45
+Fitness 47
+Depth 7
+Size 31
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ X X))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 46
+Fitness 48
+Depth 8
+Size 41
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X X)) X)))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 47
+Fitness 48
+Depth 8
+Size 41
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ irand11 X)) X)))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 48
+Fitness 48
+Depth 8
+Size 45
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ (i/ X X) X) (i+ (i* X (i/ X X)) (i/ (i+ irand58 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 49
+Fitness 48
+Depth 8
+Size 41
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ irand11 X)) X)))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 50
+Fitness 48
+Depth 8
+Size 41
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X X)) X)))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 51
+Fitness 49
+Depth 8
+Size 41
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ X (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 52
+Fitness 49
+Depth 8
+Size 41
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ X (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 53
+Fitness 49
+Depth 8
+Size 41
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ X (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 54
+Fitness 49
+Depth 8
+Size 41
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ X (i+ X (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ (i+ X (i- X X)) X)))
+###################################
+Individual 55
+Fitness 50
+Depth 8
+Size 45
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ X (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i/ (i* irand53 irand26) (i* irand53 X)) X) (i+ X X)) (i+ (i+ X (i- X X)) X)))
+###################################
+Individual 56
+Fitness 51
+Depth 8
+Size 45
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ X (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ (i- X X) (i- X X)) X) (i+ X X)) (i+ (i+ X (i- X X)) X)))
+###################################
+Individual 57
+Fitness 51
+Depth 8
+Size 45
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X (i+ X X))) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 58
+Fitness 51
+Depth 8
+Size 35
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ X X) (i+ X X)))
+###################################
+Individual 59
+Fitness 52
+Depth 11
+Size 53
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ (i+ X (i/ (i+ irand49 (i+ X X)) (i* X X))) X)) (i/ (i+ irand49 X) (i* X X))))) (i+ (i+ (i/ (i+ (i/ irand71 irand128) (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 60
+Fitness 60
+Depth 7
+Size 43
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ (i- X X) X) (i+ (i* X (i/ X X)) (i/ (i* irand64 X) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 61
+Fitness 63
+Depth 7
+Size 39
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ (i+ irand49 (i- X X)) X) (i+ (i* X (i/ X X)) (i/ X (i* X X))))) (i+ (i+ (i/ X X) (i+ X X)) (i+ X X)))
+###################################
+Individual 62
+Fitness 65
+Depth 8
+Size 47
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ (i+ X (i- X X)) X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ irand62 (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 63
+Fitness 75
+Depth 8
+Size 49
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ X (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ (i- X irand50) (i- X X)) X) (i+ X X)) (i+ X (i+ X (i- X X)))))
+###################################
+Individual 64
+Fitness 85
+Depth 8
+Size 47
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ (i+ X (i- X irand49)) X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ irand62 (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 65
+Fitness 97
+Depth 7
+Size 39
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i+ (i* X irand68) X)))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 66
+Fitness 97
+Depth 8
+Size 45
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ (i+ X (i- X X)) X) (i+ (i* X X) (i/ (i+ irand49 (i+ X irand37)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 67
+Fitness 97
+Depth 8
+Size 53
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ (i/ (i- irand113 irand147) X) (i/ (i+ X irand54) (i+ irand92 irand105))) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 68
+Fitness 97
+Depth 7
+Size 43
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ (i+ X (i- X X)) X) (i- (i+ irand157 irand142) (i- (i- X X) (i* irand175 irand148))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 69
+Fitness 102
+Depth 8
+Size 49
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ (i+ X (i- X X)) X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ (i+ irand144 irand3) (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 70
+Fitness 134
+Depth 8
+Size 41
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i- X irand132) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 71
+Fitness 181
+Depth 8
+Size 45
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X (i+ X irand197)) (i+ X (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ (i+ X (i- X X)) X)))
+###################################
+Individual 72
+Fitness 486
+Depth 7
+Size 35
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ X (i- irand82 (i+ irand106 X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 73
+Fitness 2032
+Depth 10
+Size 51
+Range 
+Program (i+ (i- (i+ X (i+ (i- X (i+ X irand37)) X)) (i/ (i+ X X) (i+ X (i/ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ (i+ X (i- X X)) X)))
+###################################
+Individual 74
+Fitness 2732
+Depth 8
+Size 43
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ irand141 X)) (i+ X X)))
+###################################
+Individual 75
+Fitness 4843
+Depth 8
+Size 39
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ X (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i- irand163 (i* X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 76
+Fitness 4855
+Depth 7
+Size 53
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) (i- (i/ irand37 irand31) (i/ irand67 X)))) (i/ (i+ X (i* (i/ X X) (i/ irand6 irand31))) (i+ (i* X (i/ X X)) (i/ (i+ irand49 X) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 77
+Fitness 4873
+Depth 8
+Size 43
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X (i* X (i/ X X))) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X X)) X)))) (i+ (i+ (i/ (i+ X (i- X irand38)) X) X) (i+ X X)))
+###################################
+Individual 78
+Fitness 4905
+Depth 11
+Size 53
+Range 
+Program (i+ (i- (i+ (i+ X X) (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ (i+ X (i/ (i+ irand49 (i+ X X)) (i* X X))) X)) (i/ (i+ irand49 X) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 79
+Fitness 4905
+Depth 11
+Size 53
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ (i+ X (i/ (i+ irand49 (i+ X X)) (i* X X))) X)) (i/ (i+ irand49 X) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X (i+ X X))) (i+ X X)))
+###################################
+Individual 80
+Fitness 4906
+Depth 8
+Size 45
+Range 
+Program (i+ (i- (i+ (i+ X X) (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 81
+Fitness 4908
+Depth 8
+Size 55
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ (i+ X (i- X X)) X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X irand37)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ (i* X (i/ X X)) (i/ X (i* X X)))))
+###################################
+Individual 82
+Fitness 4910
+Depth 8
+Size 37
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ X (i/ (i+ X (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) X) (i+ X X)))
+###################################
+Individual 83
+Fitness 6549
+Depth 8
+Size 45
+Range 
+Program (i+ (i- (i+ X (i+ (i- X (i/ X X)) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ irand58 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 84
+Fitness 6599
+Depth 8
+Size 51
+Range 
+Program (i+ (i- (i+ (i+ (i/ irand3 (i* X irand105)) X) (i+ (i+ X (i- X X)) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 85
+Fitness 8292
+Depth 8
+Size 45
+Range 
+Program (i+ (i- (i+ X (i+ (i- X (i- X irand132)) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 86
+Fitness 8292
+Depth 8
+Size 41
+Range 
+Program (i+ (i- (i+ X (i+ irand132 X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 87
+Fitness 9702
+Depth 8
+Size 49
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ (i+ X (i- X X)) X) (i+ (i* (i/ X X) (i/ X X)) (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 88
+Fitness 9717
+Depth 7
+Size 27
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i+ X X)) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 89
+Fitness 9717
+Depth 7
+Size 39
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ (i+ X (i- X X)) X) (i+ (i/ (i+ irand51 irand122) irand161) (i/ X (i* X X))))) (i+ (i+ (i/ X X) (i+ X X)) (i+ X X)))
+###################################
+Individual 90
+Fitness 9729
+Depth 8
+Size 57
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ irand58 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i* irand64 X) (i* X X))))))
+###################################
+Individual 91
+Fitness 9813
+Depth 8
+Size 47
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ X (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ (i+ (i+ (i+ X X) X) (i- X X)) X)))
+###################################
+Individual 92
+Fitness 9815
+Depth 8
+Size 53
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ (i+ X (i- X X)) X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X irand37)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i* (i+ (i/ X X) irand144) (i- X X))) (i+ X X)))
+###################################
+Individual 93
+Fitness 9966
+Depth 8
+Size 43
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ irand11 X)) X)))) (i+ (i/ irand154 (i- (i* (i/ irand112 irand118) irand160) (i- (i+ X irand50) X))) (i+ X X)))
+###################################
+Individual 94
+Fitness 604345
+Depth 8
+Size 49
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ X (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X (i+ X (i- (i* X X) X)))))
+###################################
+Individual 95
+Fitness 4.29516e+09
+Depth 8
+Size 61
+Range 
+Program (i+ (i- (i+ (i+ (i/ irand3 (i* X irand105)) X) (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i* (i+ (i* (i+ irand17 X) (i/ (i/ irand83 irand51) X)) X) (i/ X (i/ (i+ (i+ X X) (i- irand159 irand32)) (i- X (i+ irand144 irand83))))))
+###################################
+Individual 96
+Fitness 6.44245e+09
+Depth 8
+Size 51
+Range 
+Program (i+ (i- (i+ (i+ (i/ irand3 (i* X irand105)) X) (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i+ (i/ X irand16) (i- X X)) (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 97
+Fitness 9.23418e+10
+Depth 9
+Size 45
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* (i/ irand39 X) X) (i/ (i+ irand49 (i+ X (i- X X))) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))
+###################################
+Individual 98
+Fitness 1.00932e+11
+Depth 8
+Size 49
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i/ X X)) (i/ (i+ irand49 (i+ X X)) X)))) (i+ (i+ (i/ (i+ X (i- X X)) (i/ (i/ irand153 X) X)) (i+ X X)) (i+ X (i+ X (i- X X)))))
+###################################
+Individual 99
+Fitness 1.03079e+11
+Depth 8
+Size 43
+Range 
+Program (i+ (i- (i+ X (i+ (i- X irand132) X)) (i/ (i+ X X) (i+ (i* X (i- X X)) (i/ (i+ irand49 (i+ X X)) (i* X X))))) (i+ (i+ (i/ (i+ X (i- X X)) X) (i+ X X)) (i+ X X)))

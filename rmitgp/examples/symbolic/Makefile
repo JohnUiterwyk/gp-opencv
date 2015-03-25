@@ -42,57 +42,72 @@ depend: $(SRCS)
 
 #--DEPENDENCIES--
 main.o: main.cpp ../../src/Population.h ../../src/GeneticProgram.h \
-  ../../src/ReturnData.h ../../src/Node.h ../../src/Mutation.h \
-  ../../src/Crossover.h ../../src/Selection.h ../../src/GPConfig.h \
-  ../../src/Random.h ../../src/Fitness.h ../../src/NodeSet.h \
-  ../../src/Function.h ../../src/Terminal.h ../../src/Fitness.h \
-  SymbolicFitness.h ../../src/GeneticProgram.h ParallelFitness.h \
-  ../../src/TournamentSelection.h ReturnInt.h ../../src/ReturnData.h \
-  RandInt.h ../../src/Terminal.h XInt.h PlusInt.h ../../src/Function.h \
-  MinusInt.h MultInt.h DivideInt.h ../../src/NodeSet.h \
-  ../../src/ProgramGenerator.h ../../src/NodeVector.h \
-  ../../src/GPConfig.h
+ ../../src/ReturnData.h ../../src/Node.h ../../src/Mutation.h \
+ ../../src/Crossover.h ../../src/Selection.h ../../src/GPConfig.h \
+ ../../src/Random.h ../../src/Fitness.h ../../src/NodeSet.h \
+ ../../src/Function.h ../../src/Terminal.h ../../src/Parsimony.h \
+ ../../src/Population.h ../../src/CovariantTarpeian.h \
+ ../../src/DynamicDepthLimit.h ../../src/Fitness.h SymbolicFitness.h \
+ ../../src/GeneticProgram.h ParallelFitness.h \
+ ../../src/TournamentSelection.h ReturnInt.h ../../src/ReturnData.h \
+ RandInt.h ../../src/Terminal.h XInt.h PlusInt.h ../../src/Function.h \
+ MinusInt.h MultInt.h DivideInt.h ../../src/NodeSet.h \
+ ../../src/ProgramGenerator.h ../../src/NodeVector.h ../../src/GPConfig.h
 SymbolicFitness.o: SymbolicFitness.cpp SymbolicFitness.h \
-  ../../src/GeneticProgram.h ../../src/ReturnData.h ../../src/Node.h \
-  ../../src/Fitness.h ../../src/GeneticProgram.h ReturnInt.h \
-  ../../src/ReturnData.h XInt.h ../../src/Terminal.h ../../src/GPConfig.h \
-  ../../src/Random.h ../../src/Crossover.h ../../src/Mutation.h \
-  ../../src/Selection.h ../../src/Fitness.h ../../src/NodeSet.h \
-  ../../src/Function.h ../../src/Terminal.h
+ ../../src/GeneticProgram.h ../../src/ReturnData.h ../../src/Node.h \
+ ../../src/Fitness.h ../../src/GeneticProgram.h ReturnInt.h \
+ ../../src/ReturnData.h XInt.h ../../src/Terminal.h ../../src/GPConfig.h \
+ ../../src/Random.h ../../src/Crossover.h ../../src/Mutation.h \
+ ../../src/Selection.h ../../src/Fitness.h ../../src/NodeSet.h \
+ ../../src/Function.h ../../src/Terminal.h ../../src/Parsimony.h \
+ ../../src/Population.h ../../src/GPConfig.h \
+ ../../src/CovariantTarpeian.h ../../src/DynamicDepthLimit.h
 DivideInt.o: DivideInt.cpp DivideInt.h ../../src/Function.h \
-  ../../src/Node.h ../../src/ReturnData.h ReturnInt.h \
-  ../../src/ReturnData.h ../../src/GPConfig.h ../../src/Random.h \
-  ../../src/Crossover.h ../../src/GeneticProgram.h ../../src/Mutation.h \
-  ../../src/Selection.h ../../src/Fitness.h ../../src/NodeSet.h \
-  ../../src/Function.h ../../src/Terminal.h
+ ../../src/Node.h ../../src/ReturnData.h ReturnInt.h \
+ ../../src/ReturnData.h ../../src/GPConfig.h ../../src/Random.h \
+ ../../src/Crossover.h ../../src/GeneticProgram.h ../../src/Mutation.h \
+ ../../src/Selection.h ../../src/Fitness.h ../../src/NodeSet.h \
+ ../../src/Function.h ../../src/Terminal.h ../../src/Parsimony.h \
+ ../../src/Population.h ../../src/GPConfig.h \
+ ../../src/CovariantTarpeian.h ../../src/DynamicDepthLimit.h
 MinusInt.o: MinusInt.cpp MinusInt.h ../../src/Function.h ../../src/Node.h \
-  ../../src/ReturnData.h ReturnInt.h ../../src/ReturnData.h \
-  ../../src/GPConfig.h ../../src/Random.h ../../src/Crossover.h \
-  ../../src/GeneticProgram.h ../../src/Mutation.h ../../src/Selection.h \
-  ../../src/Fitness.h ../../src/NodeSet.h ../../src/Function.h \
-  ../../src/Terminal.h
+ ../../src/ReturnData.h ReturnInt.h ../../src/ReturnData.h \
+ ../../src/GPConfig.h ../../src/Random.h ../../src/Crossover.h \
+ ../../src/GeneticProgram.h ../../src/Mutation.h ../../src/Selection.h \
+ ../../src/Fitness.h ../../src/NodeSet.h ../../src/Function.h \
+ ../../src/Terminal.h ../../src/Parsimony.h ../../src/Population.h \
+ ../../src/GPConfig.h ../../src/CovariantTarpeian.h \
+ ../../src/DynamicDepthLimit.h
 MultInt.o: MultInt.cpp MultInt.h ../../src/Function.h ../../src/Node.h \
-  ../../src/ReturnData.h ReturnInt.h ../../src/ReturnData.h \
-  ../../src/GPConfig.h ../../src/Random.h ../../src/Crossover.h \
-  ../../src/GeneticProgram.h ../../src/Mutation.h ../../src/Selection.h \
-  ../../src/Fitness.h ../../src/NodeSet.h ../../src/Function.h \
-  ../../src/Terminal.h
+ ../../src/ReturnData.h ReturnInt.h ../../src/ReturnData.h \
+ ../../src/GPConfig.h ../../src/Random.h ../../src/Crossover.h \
+ ../../src/GeneticProgram.h ../../src/Mutation.h ../../src/Selection.h \
+ ../../src/Fitness.h ../../src/NodeSet.h ../../src/Function.h \
+ ../../src/Terminal.h ../../src/Parsimony.h ../../src/Population.h \
+ ../../src/GPConfig.h ../../src/CovariantTarpeian.h \
+ ../../src/DynamicDepthLimit.h
 PlusInt.o: PlusInt.cpp PlusInt.h ../../src/Function.h ../../src/Node.h \
-  ../../src/ReturnData.h ReturnInt.h ../../src/ReturnData.h \
-  ../../src/GPConfig.h ../../src/Random.h ../../src/Crossover.h \
-  ../../src/GeneticProgram.h ../../src/Mutation.h ../../src/Selection.h \
-  ../../src/Fitness.h ../../src/NodeSet.h ../../src/Function.h \
-  ../../src/Terminal.h
+ ../../src/ReturnData.h ReturnInt.h ../../src/ReturnData.h \
+ ../../src/GPConfig.h ../../src/Random.h ../../src/Crossover.h \
+ ../../src/GeneticProgram.h ../../src/Mutation.h ../../src/Selection.h \
+ ../../src/Fitness.h ../../src/NodeSet.h ../../src/Function.h \
+ ../../src/Terminal.h ../../src/Parsimony.h ../../src/Population.h \
+ ../../src/GPConfig.h ../../src/CovariantTarpeian.h \
+ ../../src/DynamicDepthLimit.h
 XInt.o: XInt.cpp XInt.h ../../src/Terminal.h ../../src/Node.h \
-  ../../src/ReturnData.h ReturnInt.h ../../src/ReturnData.h \
-  ../../src/GPConfig.h ../../src/Random.h ../../src/Crossover.h \
-  ../../src/GeneticProgram.h ../../src/Mutation.h ../../src/Selection.h \
-  ../../src/Fitness.h ../../src/NodeSet.h ../../src/Function.h \
-  ../../src/Terminal.h
+ ../../src/ReturnData.h ReturnInt.h ../../src/ReturnData.h \
+ ../../src/GPConfig.h ../../src/Random.h ../../src/Crossover.h \
+ ../../src/GeneticProgram.h ../../src/Mutation.h ../../src/Selection.h \
+ ../../src/Fitness.h ../../src/NodeSet.h ../../src/Function.h \
+ ../../src/Terminal.h ../../src/Parsimony.h ../../src/Population.h \
+ ../../src/GPConfig.h ../../src/CovariantTarpeian.h \
+ ../../src/DynamicDepthLimit.h
 RandInt.o: RandInt.cpp RandInt.h ../../src/Terminal.h ../../src/Node.h \
-  ../../src/ReturnData.h ReturnInt.h ../../src/ReturnData.h \
-  ../../src/GPConfig.h ../../src/Random.h ../../src/Crossover.h \
-  ../../src/GeneticProgram.h ../../src/Mutation.h ../../src/Selection.h \
-  ../../src/Fitness.h ../../src/NodeSet.h ../../src/Function.h \
-  ../../src/Terminal.h
+ ../../src/ReturnData.h ReturnInt.h ../../src/ReturnData.h \
+ ../../src/GPConfig.h ../../src/Random.h ../../src/Crossover.h \
+ ../../src/GeneticProgram.h ../../src/Mutation.h ../../src/Selection.h \
+ ../../src/Fitness.h ../../src/NodeSet.h ../../src/Function.h \
+ ../../src/Terminal.h ../../src/Parsimony.h ../../src/Population.h \
+ ../../src/GPConfig.h ../../src/CovariantTarpeian.h \
+ ../../src/DynamicDepthLimit.h
 ReturnInt.o: ReturnInt.cpp ReturnInt.h ../../src/ReturnData.h

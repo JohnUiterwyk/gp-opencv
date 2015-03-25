@@ -1,6 +1,6 @@
 .SUFFIXES: .cpp $(SUFFIXES)
 
-CC = /usr/local/pkg/mpich/bin/mpiCC 
+CC = mpicc 
 CFLAGS = -g -pedantic -Wall
 DEFINES = -DUNIX #-DOLD_GCC          Add DOLD_GCC if you are using GCC 3.0 
                                     #or lesser, or if using another compiler
@@ -48,676 +48,1306 @@ depend: $(SRCS)
 
 #--DEPENDENCIES--
 main.o: main.cpp ../../src/Population.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/iostream \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/iostream.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/streambuf.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/libio.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../sparc-sun-solaris2.8/include/_G_config.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/stddef.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/fstream \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/fstream.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/iostream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/c++config.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/os_defines.h \
+ /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/cpu_defines.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ostream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ios \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/iosfwd \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stringfwd.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/postypes.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cwchar \
+ /usr/include/wchar.h /usr/include/stdio.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/include/stdarg.h \
+ /usr/include/bits/wchar.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/include/stddef.h \
+ /usr/include/xlocale.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/exception \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/atomic_lockfree_defines.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/char_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_algobase.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/functexcept.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/exception_defines.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/cpp_type_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/type_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/numeric_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_pair.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/move.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/concept_check.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_iterator_base_types.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_iterator_base_funcs.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_iterator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/debug/debug.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/localefwd.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/c++locale.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/clocale \
+ /usr/include/locale.h /usr/include/bits/locale.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cctype \
+ /usr/include/ctype.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/ios_base.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/atomicity.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/gthr.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/gthr-default.h \
+ /usr/include/pthread.h /usr/include/sched.h /usr/include/time.h \
+ /usr/include/bits/sched.h /usr/include/bits/time.h \
+ /usr/include/bits/pthreadtypes.h /usr/include/bits/setjmp.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/atomic_word.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_classes.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/string \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/allocator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/c++allocator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/new_allocator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/new \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/ostream_insert.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/cxxabi_forced.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_function.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/backward/binders.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/range_access.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_classes.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/streambuf \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/streambuf.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_ios.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_facets.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cwctype \
+ /usr/include/wctype.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/ctype_base.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/streambuf_iterator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/ctype_inline.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_facets.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_ios.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/istream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/istream.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/fstream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/codecvt.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cstdio \
+ /usr/include/libio.h /usr/include/_G_config.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/basic_file.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/c++io.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/fstream.tcc \
  ../../src/GeneticProgram.h ../../src/ReturnData.h ../../src/Node.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/string \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/std/bastring.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/cstddef \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/std/straits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/cctype \
- /usr/include/ctype.h /usr/include/iso/ctype_iso.h \
- /usr/include/sys/feature_tests.h /usr/include/sys/isa_defs.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/cstring \
- /usr/include/string.h /usr/include/iso/string_iso.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/alloc.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_config.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_alloc.h \
- /usr/include/stdlib.h /usr/include/iso/stdlib_iso.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../sparc-sun-solaris2.8/include/assert.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/iterator \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_relops.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_iterator.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/std/bastring.cc \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/vector \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_algobase.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_pair.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/type_traits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/limits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/syslimits.h \
- /usr/include/limits.h /usr/include/iso/limits_iso.h \
- /usr/include/sys/int_limits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/new.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/new \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/exception \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_construct.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_uninitialized.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_vector.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_bvector.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/vector \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_construct.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/alloc_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_uninitialized.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_vector.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_bvector.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/vector.tcc \
  ../../src/Mutation.h ../../src/Crossover.h ../../src/Selection.h \
- ../../src/GPConfig.h ../../src/Random.h ../../src/Fitness.h \
- ../../src/NodeSet.h ../../src/Function.h ../../src/Terminal.h \
- ../../src/NodeVector.h ../../src/NodeVector.cpp SymbolicFitness.h \
- ParallelFitness.h ../../src/TournamentSelection.h ReturnInt.h \
- RandInt.h XInt.h PlusInt.h MinusInt.h MultInt.h DivideInt.h \
- ../../src/ProgramGenerator.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/cstdlib \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/cstdio \
- /usr/include/stdio.h /usr/include/iso/stdio_iso.h \
- /usr/include/sys/va_list.h /usr/include/stdio_tag.h \
- /usr/include/stdio_impl.h
-mpislave.o: mpislave.cpp ../../src/Fitness.h \
- ../../src/GeneticProgram.h ../../src/ReturnData.h ../../src/Node.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/string \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/std/bastring.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/cstddef \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/stddef.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/std/straits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/cctype \
- /usr/include/ctype.h /usr/include/iso/ctype_iso.h \
- /usr/include/sys/feature_tests.h /usr/include/sys/isa_defs.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/cstring \
- /usr/include/string.h /usr/include/iso/string_iso.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/alloc.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_config.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../sparc-sun-solaris2.8/include/_G_config.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_alloc.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/iostream.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/streambuf.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/libio.h \
- /usr/include/stdlib.h /usr/include/iso/stdlib_iso.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../sparc-sun-solaris2.8/include/assert.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/iterator \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_relops.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_iterator.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/std/bastring.cc \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/vector \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_algobase.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_pair.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/type_traits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/limits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/syslimits.h \
- /usr/include/limits.h /usr/include/iso/limits_iso.h \
- /usr/include/sys/int_limits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/new.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/new \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/exception \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_construct.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_uninitialized.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_vector.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_bvector.h \
- SymbolicFitness.h ReturnInt.h ../../src/NodeSet.h \
- ../../src/GPConfig.h ../../src/Random.h ../../src/Crossover.h \
- ../../src/Mutation.h ../../src/Selection.h ../../src/Function.h \
- ../../src/Terminal.h ../../src/NodeVector.h ../../src/NodeVector.cpp \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/iostream \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/fstream \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/fstream.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/cstdlib \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/cstdio \
- /usr/include/stdio.h /usr/include/iso/stdio_iso.h \
- /usr/include/sys/va_list.h /usr/include/stdio_tag.h \
- /usr/include/stdio_impl.h /usr/local/pkg/mpich/include/mpi.h \
- /usr/local/pkg/mpich/include/mpidefs.h \
- /usr/local/pkg/mpich/include/mpio.h \
- /usr/local/pkg/mpich/include/mpi_errno.h \
- /usr/local/pkg/mpich/include/mpi2c++/mpi++.h \
- /usr/local/pkg/mpich/include/mpi2c++/mpi2c++_config.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/stdarg.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/va-sparc.h \
- /usr/local/pkg/mpich/include/mpi2c++/mpi2c++_map.h \
- /usr/local/pkg/mpich/include/mpi2c++/mpi2c++_list.h \
- /usr/local/pkg/mpich/include/mpi2c++/pmpi++.h \
- /usr/local/pkg/mpich/include/mpi2c++/functions.h \
- /usr/local/pkg/mpich/include/mpi2c++/pdatatype.h \
- /usr/local/pkg/mpich/include/mpi2c++/pexception.h \
- /usr/local/pkg/mpich/include/mpi2c++/pop.h \
- /usr/local/pkg/mpich/include/mpi2c++/pstatus.h \
- /usr/local/pkg/mpich/include/mpi2c++/prequest.h \
- /usr/local/pkg/mpich/include/mpi2c++/pgroup.h \
- /usr/local/pkg/mpich/include/mpi2c++/pcomm.h \
- /usr/local/pkg/mpich/include/mpi2c++/perrhandler.h \
- /usr/local/pkg/mpich/include/mpi2c++/pintracomm.h \
- /usr/local/pkg/mpich/include/mpi2c++/ptopology.h \
- /usr/local/pkg/mpich/include/mpi2c++/pintercomm.h \
- /usr/local/pkg/mpich/include/mpi2c++/constants.h \
- /usr/local/pkg/mpich/include/mpi2c++/datatype.h \
- /usr/local/pkg/mpich/include/mpi2c++/exception.h \
- /usr/local/pkg/mpich/include/mpi2c++/op.h \
- /usr/local/pkg/mpich/include/mpi2c++/status.h \
- /usr/local/pkg/mpich/include/mpi2c++/request.h \
- /usr/local/pkg/mpich/include/mpi2c++/group.h \
- /usr/local/pkg/mpich/include/mpi2c++/comm.h \
- /usr/local/pkg/mpich/include/mpi2c++/errhandler.h \
- /usr/local/pkg/mpich/include/mpi2c++/intracomm.h \
- /usr/local/pkg/mpich/include/mpi2c++/topology.h \
- /usr/local/pkg/mpich/include/mpi2c++/intercomm.h \
- /usr/local/pkg/mpich/include/mpi2c++/pop_inln.h \
- /usr/local/pkg/mpich/include/mpi2c++/pgroup_inln.h \
- /usr/local/pkg/mpich/include/mpi2c++/pstatus_inln.h \
- /usr/local/pkg/mpich/include/mpi2c++/prequest_inln.h \
- /usr/local/pkg/mpich/include/mpi2c++/datatype_inln.h \
- /usr/local/pkg/mpich/include/mpi2c++/functions_inln.h \
- /usr/local/pkg/mpich/include/mpi2c++/request_inln.h \
- /usr/local/pkg/mpich/include/mpi2c++/comm_inln.h \
- /usr/local/pkg/mpich/include/mpi2c++/intracomm_inln.h \
- /usr/local/pkg/mpich/include/mpi2c++/topology_inln.h \
- /usr/local/pkg/mpich/include/mpi2c++/intercomm_inln.h \
- /usr/local/pkg/mpich/include/mpi2c++/group_inln.h \
- /usr/local/pkg/mpich/include/mpi2c++/op_inln.h \
- /usr/local/pkg/mpich/include/mpi2c++/errhandler_inln.h \
- /usr/local/pkg/mpich/include/mpi2c++/status_inln.h GPmpi.h
-SymbolicFitness.o: SymbolicFitness.cpp /usr/include/float.h \
+ ../../src/GPConfig.h ../../src/Random.h /usr/include/inttypes.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/include/stdint.h \
+ /usr/include/stdint.h ../../src/Fitness.h ../../src/NodeSet.h \
+ ../../src/Function.h ../../src/Terminal.h ../../src/Parsimony.h \
+ ../../src/Population.h ../../src/CovariantTarpeian.h \
+ ../../src/DynamicDepthLimit.h ../../src/Fitness.h SymbolicFitness.h \
+ ../../src/GeneticProgram.h ParallelFitness.h \
+ ../../src/TournamentSelection.h ReturnInt.h ../../src/ReturnData.h \
+ RandInt.h ../../src/Terminal.h XInt.h PlusInt.h ../../src/Function.h \
+ MinusInt.h MultInt.h DivideInt.h ../../src/NodeSet.h \
+ ../../src/ProgramGenerator.h ../../src/NodeVector.h ../../src/GPConfig.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cstdlib \
+ /usr/include/stdlib.h /usr/include/bits/waitflags.h \
+ /usr/include/bits/waitstatus.h /usr/include/sys/types.h \
+ /usr/include/sys/select.h /usr/include/bits/select.h \
+ /usr/include/bits/sigset.h /usr/include/sys/sysmacros.h \
+ /usr/include/alloca.h
+mpislave.o: mpislave.cpp ../../src/Fitness.h ../../src/GeneticProgram.h \
+ ../../src/ReturnData.h ../../src/Node.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/string \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/c++config.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/os_defines.h \
+ /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/cpu_defines.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stringfwd.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/char_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_algobase.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/functexcept.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/exception_defines.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/cpp_type_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/type_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/numeric_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_pair.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/move.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/concept_check.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_iterator_base_types.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_iterator_base_funcs.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_iterator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/debug/debug.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/postypes.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cwchar \
+ /usr/include/wchar.h /usr/include/stdio.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/include/stdarg.h \
+ /usr/include/bits/wchar.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/include/stddef.h \
+ /usr/include/xlocale.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/allocator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/c++allocator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/new_allocator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/new \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/exception \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/atomic_lockfree_defines.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/localefwd.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/c++locale.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/clocale \
+ /usr/include/locale.h /usr/include/bits/locale.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/iosfwd \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cctype \
+ /usr/include/ctype.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/ostream_insert.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/cxxabi_forced.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_function.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/backward/binders.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/range_access.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/atomicity.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/gthr.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/gthr-default.h \
+ /usr/include/pthread.h /usr/include/sched.h /usr/include/time.h \
+ /usr/include/bits/sched.h /usr/include/bits/time.h \
+ /usr/include/bits/pthreadtypes.h /usr/include/bits/setjmp.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/atomic_word.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/vector \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_construct.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/alloc_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_uninitialized.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_vector.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_bvector.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/vector.tcc \
+ SymbolicFitness.h ../../src/GeneticProgram.h ReturnInt.h \
+ ../../src/ReturnData.h ../../src/NodeSet.h ../../src/Function.h \
+ ../../src/Terminal.h ../../src/GPConfig.h ../../src/Random.h \
+ /usr/include/inttypes.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/include/stdint.h \
+ /usr/include/stdint.h ../../src/Crossover.h ../../src/Mutation.h \
+ ../../src/Selection.h ../../src/Fitness.h ../../src/NodeSet.h \
+ ../../src/Parsimony.h ../../src/Population.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/iostream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ostream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ios \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/ios_base.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_classes.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_classes.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/streambuf \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/streambuf.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_ios.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_facets.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cwctype \
+ /usr/include/wctype.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/ctype_base.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/streambuf_iterator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/ctype_inline.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_facets.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_ios.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/istream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/istream.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/fstream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/codecvt.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cstdio \
+ /usr/include/libio.h /usr/include/_G_config.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/basic_file.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/c++io.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/fstream.tcc \
+ ../../src/GPConfig.h ../../src/CovariantTarpeian.h \
+ ../../src/DynamicDepthLimit.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cstdlib \
+ /usr/include/stdlib.h /usr/include/bits/waitflags.h \
+ /usr/include/bits/waitstatus.h /usr/include/sys/types.h \
+ /usr/include/sys/select.h /usr/include/bits/select.h \
+ /usr/include/bits/sigset.h /usr/include/sys/sysmacros.h \
+ /usr/include/alloca.h /usr/local/openmpi/1.6.3-gcc/include/mpi.h \
+ /usr/local/openmpi/1.6.3-gcc/include/mpi_portable_platform.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/mpicxx.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/map \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_tree.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_map.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_multimap.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/utility \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_relops.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/constants.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/functions.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/datatype.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/exception.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/op.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/status.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/request.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/group.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/comm.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/win.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/file.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/errhandler.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/intracomm.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/topology.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/intercomm.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/info.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/datatype_inln.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/functions_inln.h \
+ /usr/include/string.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/request_inln.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/comm_inln.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/intracomm_inln.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/topology_inln.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/intercomm_inln.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/group_inln.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/op_inln.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/errhandler_inln.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/status_inln.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/info_inln.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/win_inln.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/file_inln.h \
+ GPmpi.h
+SymbolicFitness.o: SymbolicFitness.cpp \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/include/float.h \
  SymbolicFitness.h ../../src/GeneticProgram.h ../../src/ReturnData.h \
  ../../src/Node.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/string \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/std/bastring.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/cstddef \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/stddef.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/std/straits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/cctype \
- /usr/include/ctype.h /usr/include/iso/ctype_iso.h \
- /usr/include/sys/feature_tests.h /usr/include/sys/isa_defs.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/cstring \
- /usr/include/string.h /usr/include/iso/string_iso.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/alloc.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_config.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../sparc-sun-solaris2.8/include/_G_config.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_alloc.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/iostream.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/streambuf.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/libio.h \
- /usr/include/stdlib.h /usr/include/iso/stdlib_iso.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../sparc-sun-solaris2.8/include/assert.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/iterator \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_relops.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_iterator.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/std/bastring.cc \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/vector \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_algobase.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_pair.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/type_traits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/limits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/syslimits.h \
- /usr/include/limits.h /usr/include/iso/limits_iso.h \
- /usr/include/sys/int_limits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/new.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/new \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/exception \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_construct.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_uninitialized.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_vector.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_bvector.h \
- ../../src/Fitness.h ReturnInt.h XInt.h ../../src/Terminal.h \
- ../../src/GPConfig.h ../../src/Random.h ../../src/Crossover.h \
- ../../src/Mutation.h ../../src/Selection.h ../../src/NodeSet.h \
- ../../src/Function.h ../../src/NodeVector.h ../../src/NodeVector.cpp
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/string \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/c++config.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/os_defines.h \
+ /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/cpu_defines.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stringfwd.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/char_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_algobase.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/functexcept.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/exception_defines.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/cpp_type_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/type_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/numeric_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_pair.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/move.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/concept_check.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_iterator_base_types.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_iterator_base_funcs.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_iterator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/debug/debug.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/postypes.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cwchar \
+ /usr/include/wchar.h /usr/include/stdio.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/include/stdarg.h \
+ /usr/include/bits/wchar.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/include/stddef.h \
+ /usr/include/xlocale.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/allocator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/c++allocator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/new_allocator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/new \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/exception \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/atomic_lockfree_defines.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/localefwd.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/c++locale.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/clocale \
+ /usr/include/locale.h /usr/include/bits/locale.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/iosfwd \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cctype \
+ /usr/include/ctype.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/ostream_insert.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/cxxabi_forced.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_function.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/backward/binders.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/range_access.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/atomicity.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/gthr.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/gthr-default.h \
+ /usr/include/pthread.h /usr/include/sched.h /usr/include/time.h \
+ /usr/include/bits/sched.h /usr/include/bits/time.h \
+ /usr/include/bits/pthreadtypes.h /usr/include/bits/setjmp.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/atomic_word.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/vector \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_construct.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/alloc_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_uninitialized.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_vector.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_bvector.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/vector.tcc \
+ ../../src/Fitness.h ../../src/GeneticProgram.h ReturnInt.h \
+ ../../src/ReturnData.h XInt.h ../../src/Terminal.h ../../src/GPConfig.h \
+ ../../src/Random.h /usr/include/inttypes.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/include/stdint.h \
+ /usr/include/stdint.h ../../src/Crossover.h ../../src/Mutation.h \
+ ../../src/Selection.h ../../src/Fitness.h ../../src/NodeSet.h \
+ ../../src/Function.h ../../src/Terminal.h ../../src/Parsimony.h \
+ ../../src/Population.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/iostream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ostream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ios \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/ios_base.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_classes.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_classes.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/streambuf \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/streambuf.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_ios.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_facets.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cwctype \
+ /usr/include/wctype.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/ctype_base.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/streambuf_iterator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/ctype_inline.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_facets.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_ios.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/istream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/istream.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/fstream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/codecvt.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cstdio \
+ /usr/include/libio.h /usr/include/_G_config.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/basic_file.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/c++io.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/fstream.tcc \
+ ../../src/GPConfig.h ../../src/CovariantTarpeian.h \
+ ../../src/DynamicDepthLimit.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cmath \
+ /usr/include/math.h /usr/include/bits/huge_val.h \
+ /usr/include/bits/huge_valf.h /usr/include/bits/huge_vall.h \
+ /usr/include/bits/inf.h /usr/include/bits/nan.h \
+ /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h
 ParallelFitness.o: ParallelFitness.cpp \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/iostream \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/iostream.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/streambuf.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/libio.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../sparc-sun-solaris2.8/include/_G_config.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/stddef.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/fstream \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/fstream.h \
- /usr/include/float.h ParallelFitness.h ../../src/GeneticProgram.h \
- ../../src/ReturnData.h ../../src/Node.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/string \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/std/bastring.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/cstddef \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/std/straits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/cctype \
- /usr/include/ctype.h /usr/include/iso/ctype_iso.h \
- /usr/include/sys/feature_tests.h /usr/include/sys/isa_defs.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/cstring \
- /usr/include/string.h /usr/include/iso/string_iso.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/alloc.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_config.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_alloc.h \
- /usr/include/stdlib.h /usr/include/iso/stdlib_iso.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../sparc-sun-solaris2.8/include/assert.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/iterator \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_relops.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_iterator.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/std/bastring.cc \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/vector \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_algobase.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_pair.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/type_traits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/limits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/syslimits.h \
- /usr/include/limits.h /usr/include/iso/limits_iso.h \
- /usr/include/sys/int_limits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/new.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/new \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/exception \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_construct.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_uninitialized.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_vector.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_bvector.h \
- ../../src/Fitness.h /usr/local/pkg/mpich/include/mpi.h \
- /usr/local/pkg/mpich/include/mpidefs.h \
- /usr/local/pkg/mpich/include/mpio.h \
- /usr/local/pkg/mpich/include/mpi_errno.h \
- /usr/local/pkg/mpich/include/mpi2c++/mpi++.h \
- /usr/local/pkg/mpich/include/mpi2c++/mpi2c++_config.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/stdarg.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/va-sparc.h \
- /usr/local/pkg/mpich/include/mpi2c++/mpi2c++_map.h \
- /usr/local/pkg/mpich/include/mpi2c++/mpi2c++_list.h \
- /usr/local/pkg/mpich/include/mpi2c++/pmpi++.h \
- /usr/local/pkg/mpich/include/mpi2c++/functions.h \
- /usr/local/pkg/mpich/include/mpi2c++/pdatatype.h \
- /usr/local/pkg/mpich/include/mpi2c++/pexception.h \
- /usr/local/pkg/mpich/include/mpi2c++/pop.h \
- /usr/local/pkg/mpich/include/mpi2c++/pstatus.h \
- /usr/local/pkg/mpich/include/mpi2c++/prequest.h \
- /usr/local/pkg/mpich/include/mpi2c++/pgroup.h \
- /usr/local/pkg/mpich/include/mpi2c++/pcomm.h \
- /usr/local/pkg/mpich/include/mpi2c++/perrhandler.h \
- /usr/local/pkg/mpich/include/mpi2c++/pintracomm.h \
- /usr/local/pkg/mpich/include/mpi2c++/ptopology.h \
- /usr/local/pkg/mpich/include/mpi2c++/pintercomm.h \
- /usr/local/pkg/mpich/include/mpi2c++/constants.h \
- /usr/local/pkg/mpich/include/mpi2c++/datatype.h \
- /usr/local/pkg/mpich/include/mpi2c++/exception.h \
- /usr/local/pkg/mpich/include/mpi2c++/op.h \
- /usr/local/pkg/mpich/include/mpi2c++/status.h \
- /usr/local/pkg/mpich/include/mpi2c++/request.h \
- /usr/local/pkg/mpich/include/mpi2c++/group.h \
- /usr/local/pkg/mpich/include/mpi2c++/comm.h \
- /usr/local/pkg/mpich/include/mpi2c++/errhandler.h \
- /usr/local/pkg/mpich/include/mpi2c++/intracomm.h \
- /usr/local/pkg/mpich/include/mpi2c++/topology.h \
- /usr/local/pkg/mpich/include/mpi2c++/intercomm.h \
- /usr/local/pkg/mpich/include/mpi2c++/pop_inln.h \
- /usr/local/pkg/mpich/include/mpi2c++/pgroup_inln.h \
- /usr/local/pkg/mpich/include/mpi2c++/pstatus_inln.h \
- /usr/local/pkg/mpich/include/mpi2c++/prequest_inln.h \
- /usr/local/pkg/mpich/include/mpi2c++/datatype_inln.h \
- /usr/local/pkg/mpich/include/mpi2c++/functions_inln.h \
- /usr/local/pkg/mpich/include/mpi2c++/request_inln.h \
- /usr/local/pkg/mpich/include/mpi2c++/comm_inln.h \
- /usr/local/pkg/mpich/include/mpi2c++/intracomm_inln.h \
- /usr/local/pkg/mpich/include/mpi2c++/topology_inln.h \
- /usr/local/pkg/mpich/include/mpi2c++/intercomm_inln.h \
- /usr/local/pkg/mpich/include/mpi2c++/group_inln.h \
- /usr/local/pkg/mpich/include/mpi2c++/op_inln.h \
- /usr/local/pkg/mpich/include/mpi2c++/errhandler_inln.h \
- /usr/local/pkg/mpich/include/mpi2c++/status_inln.h GPmpi.h \
- ../../src/GPConfig.h ../../src/Random.h ../../src/Crossover.h \
- ../../src/Mutation.h ../../src/Selection.h ../../src/NodeSet.h \
- ../../src/Function.h ../../src/Terminal.h ../../src/NodeVector.h \
- ../../src/NodeVector.cpp
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/iostream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/c++config.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/os_defines.h \
+ /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/cpu_defines.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ostream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ios \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/iosfwd \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stringfwd.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/postypes.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cwchar \
+ /usr/include/wchar.h /usr/include/stdio.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/include/stdarg.h \
+ /usr/include/bits/wchar.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/include/stddef.h \
+ /usr/include/xlocale.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/exception \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/atomic_lockfree_defines.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/char_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_algobase.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/functexcept.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/exception_defines.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/cpp_type_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/type_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/numeric_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_pair.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/move.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/concept_check.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_iterator_base_types.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_iterator_base_funcs.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_iterator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/debug/debug.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/localefwd.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/c++locale.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/clocale \
+ /usr/include/locale.h /usr/include/bits/locale.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cctype \
+ /usr/include/ctype.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/ios_base.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/atomicity.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/gthr.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/gthr-default.h \
+ /usr/include/pthread.h /usr/include/sched.h /usr/include/time.h \
+ /usr/include/bits/sched.h /usr/include/bits/time.h \
+ /usr/include/bits/pthreadtypes.h /usr/include/bits/setjmp.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/atomic_word.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_classes.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/string \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/allocator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/c++allocator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/new_allocator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/new \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/ostream_insert.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/cxxabi_forced.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_function.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/backward/binders.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/range_access.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_classes.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/streambuf \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/streambuf.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_ios.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_facets.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cwctype \
+ /usr/include/wctype.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/ctype_base.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/streambuf_iterator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/ctype_inline.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_facets.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_ios.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/istream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/istream.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/fstream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/codecvt.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cstdio \
+ /usr/include/libio.h /usr/include/_G_config.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/basic_file.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/c++io.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/fstream.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/include/float.h \
+ ParallelFitness.h ../../src/GeneticProgram.h ../../src/ReturnData.h \
+ ../../src/Node.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/vector \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_construct.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/alloc_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_uninitialized.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_vector.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_bvector.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/vector.tcc \
+ ../../src/Fitness.h ../../src/GeneticProgram.h \
+ /usr/local/openmpi/1.6.3-gcc/include/mpi.h \
+ /usr/local/openmpi/1.6.3-gcc/include/mpi_portable_platform.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/mpicxx.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/map \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_tree.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_map.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_multimap.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/utility \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_relops.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/constants.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/functions.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/datatype.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/exception.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/op.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/status.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/request.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/group.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/comm.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/win.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/file.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/errhandler.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/intracomm.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/topology.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/intercomm.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/info.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/datatype_inln.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/functions_inln.h \
+ /usr/include/string.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/request_inln.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/comm_inln.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/intracomm_inln.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/topology_inln.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/intercomm_inln.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/group_inln.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/op_inln.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/errhandler_inln.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/status_inln.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/info_inln.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/win_inln.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/file_inln.h \
+ GPmpi.h ../../src/GPConfig.h ../../src/Random.h /usr/include/inttypes.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/include/stdint.h \
+ /usr/include/stdint.h ../../src/Crossover.h ../../src/Mutation.h \
+ ../../src/Selection.h ../../src/Fitness.h ../../src/NodeSet.h \
+ ../../src/Function.h ../../src/Terminal.h ../../src/Parsimony.h \
+ ../../src/Population.h ../../src/GPConfig.h \
+ ../../src/CovariantTarpeian.h ../../src/DynamicDepthLimit.h
 DivideInt.o: DivideInt.cpp \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/string \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/std/bastring.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/cstddef \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/stddef.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/std/straits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/cctype \
- /usr/include/ctype.h /usr/include/iso/ctype_iso.h \
- /usr/include/sys/feature_tests.h /usr/include/sys/isa_defs.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/cstring \
- /usr/include/string.h /usr/include/iso/string_iso.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/alloc.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_config.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../sparc-sun-solaris2.8/include/_G_config.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_alloc.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/iostream.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/streambuf.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/libio.h \
- /usr/include/stdlib.h /usr/include/iso/stdlib_iso.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../sparc-sun-solaris2.8/include/assert.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/iterator \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_relops.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_iterator.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/std/bastring.cc \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/iostream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/string \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/c++config.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/os_defines.h \
+ /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/cpu_defines.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stringfwd.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/char_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_algobase.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/functexcept.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/exception_defines.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/cpp_type_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/type_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/numeric_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_pair.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/move.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/concept_check.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_iterator_base_types.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_iterator_base_funcs.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_iterator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/debug/debug.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/postypes.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cwchar \
+ /usr/include/wchar.h /usr/include/stdio.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/include/stdarg.h \
+ /usr/include/bits/wchar.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/include/stddef.h \
+ /usr/include/xlocale.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/allocator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/c++allocator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/new_allocator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/new \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/exception \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/atomic_lockfree_defines.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/localefwd.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/c++locale.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/clocale \
+ /usr/include/locale.h /usr/include/bits/locale.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/iosfwd \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cctype \
+ /usr/include/ctype.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/ostream_insert.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/cxxabi_forced.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_function.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/backward/binders.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/range_access.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/atomicity.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/gthr.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/gthr-default.h \
+ /usr/include/pthread.h /usr/include/sched.h /usr/include/time.h \
+ /usr/include/bits/sched.h /usr/include/bits/time.h \
+ /usr/include/bits/pthreadtypes.h /usr/include/bits/setjmp.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/atomic_word.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/iostream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ostream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ios \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/ios_base.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_classes.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_classes.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/streambuf \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/streambuf.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_ios.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_facets.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cwctype \
+ /usr/include/wctype.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/ctype_base.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/streambuf_iterator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/ctype_inline.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_facets.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_ios.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/istream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/istream.tcc \
  DivideInt.h ../../src/Function.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/vector \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_algobase.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_pair.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/type_traits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/limits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/syslimits.h \
- /usr/include/limits.h /usr/include/iso/limits_iso.h \
- /usr/include/sys/int_limits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/new.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/new \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/exception \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_construct.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_uninitialized.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_vector.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_bvector.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/vector \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_construct.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/alloc_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_uninitialized.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_vector.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_bvector.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/vector.tcc \
  ../../src/Node.h ../../src/ReturnData.h ReturnInt.h \
- ../../src/GPConfig.h ../../src/Random.h ../../src/Crossover.h \
- ../../src/GeneticProgram.h ../../src/Mutation.h ../../src/Selection.h \
- ../../src/Fitness.h ../../src/NodeSet.h ../../src/Terminal.h \
- ../../src/NodeVector.h ../../src/NodeVector.cpp /usr/include/float.h
+ ../../src/ReturnData.h ../../src/GPConfig.h ../../src/Random.h \
+ /usr/include/inttypes.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/include/stdint.h \
+ /usr/include/stdint.h ../../src/Crossover.h ../../src/GeneticProgram.h \
+ ../../src/Mutation.h ../../src/Selection.h ../../src/Fitness.h \
+ ../../src/NodeSet.h ../../src/Function.h ../../src/Terminal.h \
+ ../../src/Parsimony.h ../../src/Population.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/fstream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/codecvt.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cstdio \
+ /usr/include/libio.h /usr/include/_G_config.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/basic_file.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/c++io.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/fstream.tcc \
+ ../../src/GPConfig.h ../../src/CovariantTarpeian.h \
+ ../../src/DynamicDepthLimit.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cfloat \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/include/float.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/include-fixed/limits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h
 MinusInt.o: MinusInt.cpp \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/string \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/std/bastring.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/cstddef \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/stddef.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/std/straits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/cctype \
- /usr/include/ctype.h /usr/include/iso/ctype_iso.h \
- /usr/include/sys/feature_tests.h /usr/include/sys/isa_defs.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/cstring \
- /usr/include/string.h /usr/include/iso/string_iso.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/alloc.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_config.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../sparc-sun-solaris2.8/include/_G_config.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_alloc.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/iostream.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/streambuf.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/libio.h \
- /usr/include/stdlib.h /usr/include/iso/stdlib_iso.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../sparc-sun-solaris2.8/include/assert.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/iterator \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_relops.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_iterator.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/std/bastring.cc \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/iostream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/string \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/c++config.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/os_defines.h \
+ /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/cpu_defines.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stringfwd.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/char_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_algobase.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/functexcept.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/exception_defines.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/cpp_type_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/type_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/numeric_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_pair.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/move.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/concept_check.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_iterator_base_types.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_iterator_base_funcs.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_iterator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/debug/debug.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/postypes.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cwchar \
+ /usr/include/wchar.h /usr/include/stdio.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/include/stdarg.h \
+ /usr/include/bits/wchar.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/include/stddef.h \
+ /usr/include/xlocale.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/allocator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/c++allocator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/new_allocator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/new \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/exception \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/atomic_lockfree_defines.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/localefwd.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/c++locale.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/clocale \
+ /usr/include/locale.h /usr/include/bits/locale.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/iosfwd \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cctype \
+ /usr/include/ctype.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/ostream_insert.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/cxxabi_forced.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_function.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/backward/binders.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/range_access.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/atomicity.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/gthr.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/gthr-default.h \
+ /usr/include/pthread.h /usr/include/sched.h /usr/include/time.h \
+ /usr/include/bits/sched.h /usr/include/bits/time.h \
+ /usr/include/bits/pthreadtypes.h /usr/include/bits/setjmp.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/atomic_word.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/iostream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ostream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ios \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/ios_base.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_classes.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_classes.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/streambuf \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/streambuf.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_ios.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_facets.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cwctype \
+ /usr/include/wctype.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/ctype_base.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/streambuf_iterator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/ctype_inline.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_facets.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_ios.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/istream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/istream.tcc \
  MinusInt.h ../../src/Function.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/vector \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_algobase.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_pair.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/type_traits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/limits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/syslimits.h \
- /usr/include/limits.h /usr/include/iso/limits_iso.h \
- /usr/include/sys/int_limits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/new.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/new \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/exception \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_construct.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_uninitialized.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_vector.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_bvector.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/vector \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_construct.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/alloc_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_uninitialized.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_vector.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_bvector.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/vector.tcc \
  ../../src/Node.h ../../src/ReturnData.h ReturnInt.h \
- ../../src/GPConfig.h ../../src/Random.h ../../src/Crossover.h \
- ../../src/GeneticProgram.h ../../src/Mutation.h ../../src/Selection.h \
- ../../src/Fitness.h ../../src/NodeSet.h ../../src/Terminal.h \
- ../../src/NodeVector.h ../../src/NodeVector.cpp
+ ../../src/ReturnData.h ../../src/GPConfig.h ../../src/Random.h \
+ /usr/include/inttypes.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/include/stdint.h \
+ /usr/include/stdint.h ../../src/Crossover.h ../../src/GeneticProgram.h \
+ ../../src/Mutation.h ../../src/Selection.h ../../src/Fitness.h \
+ ../../src/NodeSet.h ../../src/Function.h ../../src/Terminal.h \
+ ../../src/Parsimony.h ../../src/Population.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/fstream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/codecvt.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cstdio \
+ /usr/include/libio.h /usr/include/_G_config.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/basic_file.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/c++io.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/fstream.tcc \
+ ../../src/GPConfig.h ../../src/CovariantTarpeian.h \
+ ../../src/DynamicDepthLimit.h
 MultInt.o: MultInt.cpp \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/string \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/std/bastring.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/cstddef \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/stddef.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/std/straits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/cctype \
- /usr/include/ctype.h /usr/include/iso/ctype_iso.h \
- /usr/include/sys/feature_tests.h /usr/include/sys/isa_defs.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/cstring \
- /usr/include/string.h /usr/include/iso/string_iso.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/alloc.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_config.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../sparc-sun-solaris2.8/include/_G_config.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_alloc.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/iostream.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/streambuf.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/libio.h \
- /usr/include/stdlib.h /usr/include/iso/stdlib_iso.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../sparc-sun-solaris2.8/include/assert.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/iterator \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_relops.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_iterator.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/std/bastring.cc \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/iostream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/string \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/c++config.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/os_defines.h \
+ /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/cpu_defines.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stringfwd.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/char_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_algobase.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/functexcept.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/exception_defines.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/cpp_type_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/type_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/numeric_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_pair.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/move.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/concept_check.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_iterator_base_types.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_iterator_base_funcs.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_iterator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/debug/debug.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/postypes.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cwchar \
+ /usr/include/wchar.h /usr/include/stdio.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/include/stdarg.h \
+ /usr/include/bits/wchar.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/include/stddef.h \
+ /usr/include/xlocale.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/allocator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/c++allocator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/new_allocator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/new \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/exception \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/atomic_lockfree_defines.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/localefwd.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/c++locale.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/clocale \
+ /usr/include/locale.h /usr/include/bits/locale.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/iosfwd \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cctype \
+ /usr/include/ctype.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/ostream_insert.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/cxxabi_forced.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_function.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/backward/binders.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/range_access.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/atomicity.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/gthr.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/gthr-default.h \
+ /usr/include/pthread.h /usr/include/sched.h /usr/include/time.h \
+ /usr/include/bits/sched.h /usr/include/bits/time.h \
+ /usr/include/bits/pthreadtypes.h /usr/include/bits/setjmp.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/atomic_word.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/iostream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ostream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ios \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/ios_base.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_classes.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_classes.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/streambuf \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/streambuf.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_ios.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_facets.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cwctype \
+ /usr/include/wctype.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/ctype_base.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/streambuf_iterator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/ctype_inline.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_facets.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_ios.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/istream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/istream.tcc \
  MultInt.h ../../src/Function.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/vector \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_algobase.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_pair.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/type_traits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/limits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/syslimits.h \
- /usr/include/limits.h /usr/include/iso/limits_iso.h \
- /usr/include/sys/int_limits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/new.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/new \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/exception \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_construct.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_uninitialized.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_vector.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_bvector.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/vector \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_construct.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/alloc_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_uninitialized.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_vector.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_bvector.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/vector.tcc \
  ../../src/Node.h ../../src/ReturnData.h ReturnInt.h \
- ../../src/GPConfig.h ../../src/Random.h ../../src/Crossover.h \
- ../../src/GeneticProgram.h ../../src/Mutation.h ../../src/Selection.h \
- ../../src/Fitness.h ../../src/NodeSet.h ../../src/Terminal.h \
- ../../src/NodeVector.h ../../src/NodeVector.cpp
+ ../../src/ReturnData.h ../../src/GPConfig.h ../../src/Random.h \
+ /usr/include/inttypes.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/include/stdint.h \
+ /usr/include/stdint.h ../../src/Crossover.h ../../src/GeneticProgram.h \
+ ../../src/Mutation.h ../../src/Selection.h ../../src/Fitness.h \
+ ../../src/NodeSet.h ../../src/Function.h ../../src/Terminal.h \
+ ../../src/Parsimony.h ../../src/Population.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/fstream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/codecvt.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cstdio \
+ /usr/include/libio.h /usr/include/_G_config.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/basic_file.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/c++io.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/fstream.tcc \
+ ../../src/GPConfig.h ../../src/CovariantTarpeian.h \
+ ../../src/DynamicDepthLimit.h
 PlusInt.o: PlusInt.cpp \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/string \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/std/bastring.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/cstddef \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/stddef.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/std/straits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/cctype \
- /usr/include/ctype.h /usr/include/iso/ctype_iso.h \
- /usr/include/sys/feature_tests.h /usr/include/sys/isa_defs.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/cstring \
- /usr/include/string.h /usr/include/iso/string_iso.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/alloc.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_config.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../sparc-sun-solaris2.8/include/_G_config.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_alloc.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/iostream.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/streambuf.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/libio.h \
- /usr/include/stdlib.h /usr/include/iso/stdlib_iso.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../sparc-sun-solaris2.8/include/assert.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/iterator \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_relops.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_iterator.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/std/bastring.cc \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/iostream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/string \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/c++config.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/os_defines.h \
+ /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/cpu_defines.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stringfwd.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/char_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_algobase.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/functexcept.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/exception_defines.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/cpp_type_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/type_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/numeric_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_pair.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/move.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/concept_check.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_iterator_base_types.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_iterator_base_funcs.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_iterator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/debug/debug.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/postypes.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cwchar \
+ /usr/include/wchar.h /usr/include/stdio.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/include/stdarg.h \
+ /usr/include/bits/wchar.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/include/stddef.h \
+ /usr/include/xlocale.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/allocator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/c++allocator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/new_allocator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/new \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/exception \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/atomic_lockfree_defines.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/localefwd.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/c++locale.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/clocale \
+ /usr/include/locale.h /usr/include/bits/locale.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/iosfwd \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cctype \
+ /usr/include/ctype.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/ostream_insert.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/cxxabi_forced.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_function.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/backward/binders.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/range_access.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/atomicity.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/gthr.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/gthr-default.h \
+ /usr/include/pthread.h /usr/include/sched.h /usr/include/time.h \
+ /usr/include/bits/sched.h /usr/include/bits/time.h \
+ /usr/include/bits/pthreadtypes.h /usr/include/bits/setjmp.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/atomic_word.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/iostream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ostream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ios \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/ios_base.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_classes.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_classes.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/streambuf \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/streambuf.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_ios.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_facets.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cwctype \
+ /usr/include/wctype.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/ctype_base.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/streambuf_iterator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/ctype_inline.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_facets.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_ios.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/istream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/istream.tcc \
  PlusInt.h ../../src/Function.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/vector \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_algobase.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_pair.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/type_traits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/limits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/syslimits.h \
- /usr/include/limits.h /usr/include/iso/limits_iso.h \
- /usr/include/sys/int_limits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/new.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/new \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/exception \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_construct.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_uninitialized.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_vector.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_bvector.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/vector \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_construct.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/alloc_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_uninitialized.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_vector.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_bvector.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/vector.tcc \
  ../../src/Node.h ../../src/ReturnData.h ReturnInt.h \
- ../../src/GPConfig.h ../../src/Random.h ../../src/Crossover.h \
- ../../src/GeneticProgram.h ../../src/Mutation.h ../../src/Selection.h \
- ../../src/Fitness.h ../../src/NodeSet.h ../../src/Terminal.h \
- ../../src/NodeVector.h ../../src/NodeVector.cpp
+ ../../src/ReturnData.h ../../src/GPConfig.h ../../src/Random.h \
+ /usr/include/inttypes.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/include/stdint.h \
+ /usr/include/stdint.h ../../src/Crossover.h ../../src/GeneticProgram.h \
+ ../../src/Mutation.h ../../src/Selection.h ../../src/Fitness.h \
+ ../../src/NodeSet.h ../../src/Function.h ../../src/Terminal.h \
+ ../../src/Parsimony.h ../../src/Population.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/fstream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/codecvt.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cstdio \
+ /usr/include/libio.h /usr/include/_G_config.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/basic_file.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/c++io.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/fstream.tcc \
+ ../../src/GPConfig.h ../../src/CovariantTarpeian.h \
+ ../../src/DynamicDepthLimit.h
 XInt.o: XInt.cpp \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/cstdlib \
- /usr/include/stdlib.h /usr/include/iso/stdlib_iso.h \
- /usr/include/sys/feature_tests.h /usr/include/sys/isa_defs.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/cstdio \
- /usr/include/stdio.h /usr/include/iso/stdio_iso.h \
- /usr/include/sys/va_list.h /usr/include/stdio_tag.h \
- /usr/include/stdio_impl.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/string \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/std/bastring.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/cstddef \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/stddef.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/std/straits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/cctype \
- /usr/include/ctype.h /usr/include/iso/ctype_iso.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/cstring \
- /usr/include/string.h /usr/include/iso/string_iso.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/alloc.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_config.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../sparc-sun-solaris2.8/include/_G_config.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_alloc.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/iostream.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/streambuf.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/libio.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../sparc-sun-solaris2.8/include/assert.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/iterator \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_relops.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_iterator.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/std/bastring.cc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cstdlib \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/c++config.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/os_defines.h \
+ /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/cpu_defines.h \
+ /usr/include/stdlib.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/include/stddef.h \
+ /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
+ /usr/include/endian.h /usr/include/bits/endian.h \
+ /usr/include/bits/byteswap.h /usr/include/xlocale.h \
+ /usr/include/sys/types.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/time.h \
+ /usr/include/sys/select.h /usr/include/bits/select.h \
+ /usr/include/bits/sigset.h /usr/include/bits/time.h \
+ /usr/include/sys/sysmacros.h /usr/include/bits/pthreadtypes.h \
+ /usr/include/alloca.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cstdio \
+ /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
+ /usr/include/wchar.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/include/stdarg.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/string \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stringfwd.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/char_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_algobase.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/functexcept.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/exception_defines.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/cpp_type_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/type_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/numeric_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_pair.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/move.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/concept_check.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_iterator_base_types.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_iterator_base_funcs.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_iterator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/debug/debug.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/postypes.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cwchar \
+ /usr/include/bits/wchar.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/allocator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/c++allocator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/new_allocator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/new \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/exception \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/atomic_lockfree_defines.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/localefwd.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/c++locale.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/clocale \
+ /usr/include/locale.h /usr/include/bits/locale.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/iosfwd \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cctype \
+ /usr/include/ctype.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/ostream_insert.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/cxxabi_forced.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_function.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/backward/binders.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/range_access.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/atomicity.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/gthr.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/gthr-default.h \
+ /usr/include/pthread.h /usr/include/sched.h /usr/include/bits/sched.h \
+ /usr/include/bits/setjmp.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/atomic_word.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.tcc \
  XInt.h ../../src/Terminal.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/vector \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_algobase.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_pair.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/type_traits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/limits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/syslimits.h \
- /usr/include/limits.h /usr/include/iso/limits_iso.h \
- /usr/include/sys/int_limits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/new.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/new \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/exception \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_construct.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_uninitialized.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_vector.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_bvector.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/vector \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_construct.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/alloc_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_uninitialized.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_vector.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_bvector.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/vector.tcc \
  ../../src/Node.h ../../src/ReturnData.h ReturnInt.h \
- ../../src/GPConfig.h ../../src/Random.h ../../src/Crossover.h \
- ../../src/GeneticProgram.h ../../src/Mutation.h ../../src/Selection.h \
- ../../src/Fitness.h ../../src/NodeSet.h ../../src/Function.h \
- ../../src/NodeVector.h ../../src/NodeVector.cpp
+ ../../src/ReturnData.h ../../src/GPConfig.h ../../src/Random.h \
+ /usr/include/inttypes.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/include/stdint.h \
+ /usr/include/stdint.h ../../src/Crossover.h ../../src/GeneticProgram.h \
+ ../../src/Mutation.h ../../src/Selection.h ../../src/Fitness.h \
+ ../../src/NodeSet.h ../../src/Function.h ../../src/Terminal.h \
+ ../../src/Parsimony.h ../../src/Population.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/iostream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ostream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ios \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/ios_base.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_classes.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_classes.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/streambuf \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/streambuf.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_ios.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_facets.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cwctype \
+ /usr/include/wctype.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/ctype_base.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/streambuf_iterator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/ctype_inline.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_facets.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_ios.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/istream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/istream.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/fstream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/codecvt.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/basic_file.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/c++io.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/fstream.tcc \
+ ../../src/GPConfig.h ../../src/CovariantTarpeian.h \
+ ../../src/DynamicDepthLimit.h
 RandInt.o: RandInt.cpp \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/cstdlib \
- /usr/include/stdlib.h /usr/include/iso/stdlib_iso.h \
- /usr/include/sys/feature_tests.h /usr/include/sys/isa_defs.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/cstdio \
- /usr/include/stdio.h /usr/include/iso/stdio_iso.h \
- /usr/include/sys/va_list.h /usr/include/stdio_tag.h \
- /usr/include/stdio_impl.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/string \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/std/bastring.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/cstddef \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/stddef.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/std/straits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/cctype \
- /usr/include/ctype.h /usr/include/iso/ctype_iso.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/cstring \
- /usr/include/string.h /usr/include/iso/string_iso.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/alloc.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_config.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../sparc-sun-solaris2.8/include/_G_config.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_alloc.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/iostream.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/streambuf.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/libio.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../sparc-sun-solaris2.8/include/assert.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/iterator \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_relops.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_iterator.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/std/bastring.cc \
- RandInt.h ../../src/Terminal.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/vector \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_algobase.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_pair.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/type_traits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/limits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/syslimits.h \
- /usr/include/limits.h /usr/include/iso/limits_iso.h \
- /usr/include/sys/int_limits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/new.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/new \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/exception \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_construct.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_uninitialized.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_vector.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_bvector.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cstdlib \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/c++config.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/os_defines.h \
+ /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/cpu_defines.h \
+ /usr/include/stdlib.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/include/stddef.h \
+ /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
+ /usr/include/endian.h /usr/include/bits/endian.h \
+ /usr/include/bits/byteswap.h /usr/include/xlocale.h \
+ /usr/include/sys/types.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/time.h \
+ /usr/include/sys/select.h /usr/include/bits/select.h \
+ /usr/include/bits/sigset.h /usr/include/bits/time.h \
+ /usr/include/sys/sysmacros.h /usr/include/bits/pthreadtypes.h \
+ /usr/include/alloca.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cstdio \
+ /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
+ /usr/include/wchar.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/include/stdarg.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cstring \
+ /usr/include/string.h RandInt.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/string \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stringfwd.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/char_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_algobase.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/functexcept.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/exception_defines.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/cpp_type_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/type_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/numeric_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_pair.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/move.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/concept_check.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_iterator_base_types.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_iterator_base_funcs.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_iterator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/debug/debug.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/postypes.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cwchar \
+ /usr/include/bits/wchar.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/allocator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/c++allocator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/new_allocator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/new \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/exception \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/atomic_lockfree_defines.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/localefwd.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/c++locale.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/clocale \
+ /usr/include/locale.h /usr/include/bits/locale.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/iosfwd \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cctype \
+ /usr/include/ctype.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/ostream_insert.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/cxxabi_forced.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_function.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/backward/binders.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/range_access.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/atomicity.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/gthr.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/gthr-default.h \
+ /usr/include/pthread.h /usr/include/sched.h /usr/include/bits/sched.h \
+ /usr/include/bits/setjmp.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/atomic_word.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.tcc \
+ ../../src/Terminal.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/vector \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_construct.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/alloc_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_uninitialized.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_vector.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_bvector.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/vector.tcc \
  ../../src/Node.h ../../src/ReturnData.h ReturnInt.h \
- ../../src/GPConfig.h ../../src/Random.h ../../src/Crossover.h \
- ../../src/GeneticProgram.h ../../src/Mutation.h ../../src/Selection.h \
- ../../src/Fitness.h ../../src/NodeSet.h ../../src/Function.h \
- ../../src/NodeVector.h ../../src/NodeVector.cpp
+ ../../src/ReturnData.h ../../src/GPConfig.h ../../src/Random.h \
+ /usr/include/inttypes.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/include/stdint.h \
+ /usr/include/stdint.h ../../src/Crossover.h ../../src/GeneticProgram.h \
+ ../../src/Mutation.h ../../src/Selection.h ../../src/Fitness.h \
+ ../../src/NodeSet.h ../../src/Function.h ../../src/Terminal.h \
+ ../../src/Parsimony.h ../../src/Population.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/iostream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ostream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ios \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/ios_base.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_classes.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_classes.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/streambuf \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/streambuf.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_ios.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_facets.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cwctype \
+ /usr/include/wctype.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/ctype_base.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/streambuf_iterator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/ctype_inline.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_facets.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_ios.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/istream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/istream.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/fstream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/codecvt.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/basic_file.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/c++io.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/fstream.tcc \
+ ../../src/GPConfig.h ../../src/CovariantTarpeian.h \
+ ../../src/DynamicDepthLimit.h
 ReturnInt.o: ReturnInt.cpp ReturnInt.h ../../src/ReturnData.h
 GPmpi.o: GPmpi.cpp GPmpi.h ../../src/GeneticProgram.h \
  ../../src/ReturnData.h ../../src/Node.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/string \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/std/bastring.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/cstddef \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/stddef.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/std/straits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/cctype \
- /usr/include/ctype.h /usr/include/iso/ctype_iso.h \
- /usr/include/sys/feature_tests.h /usr/include/sys/isa_defs.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/cstring \
- /usr/include/string.h /usr/include/iso/string_iso.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/alloc.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_config.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../sparc-sun-solaris2.8/include/_G_config.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_alloc.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/iostream.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/streambuf.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/libio.h \
- /usr/include/stdlib.h /usr/include/iso/stdlib_iso.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../sparc-sun-solaris2.8/include/assert.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/iterator \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_relops.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_iterator.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/std/bastring.cc \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/vector \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_algobase.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_pair.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/type_traits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/limits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/syslimits.h \
- /usr/include/limits.h /usr/include/iso/limits_iso.h \
- /usr/include/sys/int_limits.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/new.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/new \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/exception \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_construct.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_uninitialized.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_vector.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/../../../../include/g++-3/stl_bvector.h \
- /usr/local/pkg/mpich/include/mpi.h \
- /usr/local/pkg/mpich/include/mpidefs.h \
- /usr/local/pkg/mpich/include/mpio.h \
- /usr/local/pkg/mpich/include/mpi_errno.h \
- /usr/local/pkg/mpich/include/mpi2c++/mpi++.h \
- /usr/local/pkg/mpich/include/mpi2c++/mpi2c++_config.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/stdarg.h \
- /usr/local/pkg/gcc-2.95.2/lib/gcc-lib/sparc-sun-solaris2.8/2.95.2/include/va-sparc.h \
- /usr/local/pkg/mpich/include/mpi2c++/mpi2c++_map.h \
- /usr/local/pkg/mpich/include/mpi2c++/mpi2c++_list.h \
- /usr/local/pkg/mpich/include/mpi2c++/pmpi++.h \
- /usr/local/pkg/mpich/include/mpi2c++/functions.h \
- /usr/local/pkg/mpich/include/mpi2c++/pdatatype.h \
- /usr/local/pkg/mpich/include/mpi2c++/pexception.h \
- /usr/local/pkg/mpich/include/mpi2c++/pop.h \
- /usr/local/pkg/mpich/include/mpi2c++/pstatus.h \
- /usr/local/pkg/mpich/include/mpi2c++/prequest.h \
- /usr/local/pkg/mpich/include/mpi2c++/pgroup.h \
- /usr/local/pkg/mpich/include/mpi2c++/pcomm.h \
- /usr/local/pkg/mpich/include/mpi2c++/perrhandler.h \
- /usr/local/pkg/mpich/include/mpi2c++/pintracomm.h \
- /usr/local/pkg/mpich/include/mpi2c++/ptopology.h \
- /usr/local/pkg/mpich/include/mpi2c++/pintercomm.h \
- /usr/local/pkg/mpich/include/mpi2c++/constants.h \
- /usr/local/pkg/mpich/include/mpi2c++/datatype.h \
- /usr/local/pkg/mpich/include/mpi2c++/exception.h \
- /usr/local/pkg/mpich/include/mpi2c++/op.h \
- /usr/local/pkg/mpich/include/mpi2c++/status.h \
- /usr/local/pkg/mpich/include/mpi2c++/request.h \
- /usr/local/pkg/mpich/include/mpi2c++/group.h \
- /usr/local/pkg/mpich/include/mpi2c++/comm.h \
- /usr/local/pkg/mpich/include/mpi2c++/errhandler.h \
- /usr/local/pkg/mpich/include/mpi2c++/intracomm.h \
- /usr/local/pkg/mpich/include/mpi2c++/topology.h \
- /usr/local/pkg/mpich/include/mpi2c++/intercomm.h \
- /usr/local/pkg/mpich/include/mpi2c++/pop_inln.h \
- /usr/local/pkg/mpich/include/mpi2c++/pgroup_inln.h \
- /usr/local/pkg/mpich/include/mpi2c++/pstatus_inln.h \
- /usr/local/pkg/mpich/include/mpi2c++/prequest_inln.h \
- /usr/local/pkg/mpich/include/mpi2c++/datatype_inln.h \
- /usr/local/pkg/mpich/include/mpi2c++/functions_inln.h \
- /usr/local/pkg/mpich/include/mpi2c++/request_inln.h \
- /usr/local/pkg/mpich/include/mpi2c++/comm_inln.h \
- /usr/local/pkg/mpich/include/mpi2c++/intracomm_inln.h \
- /usr/local/pkg/mpich/include/mpi2c++/topology_inln.h \
- /usr/local/pkg/mpich/include/mpi2c++/intercomm_inln.h \
- /usr/local/pkg/mpich/include/mpi2c++/group_inln.h \
- /usr/local/pkg/mpich/include/mpi2c++/op_inln.h \
- /usr/local/pkg/mpich/include/mpi2c++/errhandler_inln.h \
- /usr/local/pkg/mpich/include/mpi2c++/status_inln.h
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/string \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/c++config.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/os_defines.h \
+ /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/cpu_defines.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stringfwd.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/char_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_algobase.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/functexcept.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/exception_defines.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/cpp_type_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/type_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/numeric_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_pair.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/move.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/concept_check.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_iterator_base_types.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_iterator_base_funcs.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_iterator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/debug/debug.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/postypes.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cwchar \
+ /usr/include/wchar.h /usr/include/stdio.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/include/stdarg.h \
+ /usr/include/bits/wchar.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/include/stddef.h \
+ /usr/include/xlocale.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/allocator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/c++allocator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/new_allocator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/new \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/exception \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/atomic_lockfree_defines.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/localefwd.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/c++locale.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/clocale \
+ /usr/include/locale.h /usr/include/bits/locale.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/iosfwd \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cctype \
+ /usr/include/ctype.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/ostream_insert.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/cxxabi_forced.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_function.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/backward/binders.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/range_access.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/atomicity.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/gthr.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/gthr-default.h \
+ /usr/include/pthread.h /usr/include/sched.h /usr/include/time.h \
+ /usr/include/bits/sched.h /usr/include/bits/time.h \
+ /usr/include/bits/pthreadtypes.h /usr/include/bits/setjmp.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/atomic_word.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/vector \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_construct.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ext/alloc_traits.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_uninitialized.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_vector.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_bvector.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/vector.tcc \
+ /usr/local/openmpi/1.6.3-gcc/include/mpi.h \
+ /usr/local/openmpi/1.6.3-gcc/include/mpi_portable_platform.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/mpicxx.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/map \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_tree.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_map.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_multimap.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/utility \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_relops.h \
+ /usr/include/libio.h /usr/include/_G_config.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/iostream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ostream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/ios \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/ios_base.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_classes.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_classes.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/streambuf \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/streambuf.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_ios.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_facets.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/cwctype \
+ /usr/include/wctype.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/ctype_base.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/streambuf_iterator.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/x86_64-unknown-linux-gnu/bits/ctype_inline.h \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/locale_facets.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/basic_ios.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/istream \
+ /usr/local/gcc/4.7.2/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/istream.tcc \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/constants.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/functions.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/datatype.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/exception.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/op.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/status.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/request.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/group.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/comm.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/win.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/file.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/errhandler.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/intracomm.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/topology.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/intercomm.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/info.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/datatype_inln.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/functions_inln.h \
+ /usr/include/string.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/request_inln.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/comm_inln.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/intracomm_inln.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/topology_inln.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/intercomm_inln.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/group_inln.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/op_inln.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/errhandler_inln.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/status_inln.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/info_inln.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/win_inln.h \
+ /usr/local/openmpi/1.6.3-gcc/include/openmpi/ompi/mpi/cxx/file_inln.h

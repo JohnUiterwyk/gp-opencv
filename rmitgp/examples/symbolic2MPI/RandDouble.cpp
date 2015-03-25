@@ -8,7 +8,9 @@
 ***************************************************************************/
 
 #include <cstdio> //for sprintf
-#include <cstring>
+#include <string>
+
+#include <opencv2/opencv.hpp>
 
 using namespace std;
 
@@ -19,8 +21,9 @@ using namespace std;
 
 RandDouble::RandDouble(GPConfig *conf) :
                            Terminal(ReturnDouble::TYPENUM, "drand", conf),
-                           value(config->randomNumGenerator->randReal() * 100.0)
+                           value( pow(config->randomNumGenerator->randReal() * 2 - 1, 3) * 10)
 {
+	
 }
 
 RandDouble::RandDouble(double initValue, GPConfig *conf) :
@@ -45,8 +48,8 @@ Terminal* RandDouble::generate(const string &name, GPConfig *conf)
       return new RandDouble(conf);
 #ifdef OLD_GCC 
    //Older versions of gcc 2.9X shipped with a c++ library which
-   //had mistakes in implementation of some methods string::compare 
-   //has it's parameters in the wrong order.
+   //had mistakes in implementation of some methods string::compare
+   //has it's parameters in the wrong order. 
 
    else if (name.compare(tmpName, 0, tmpName.size()) == 0)
 #else

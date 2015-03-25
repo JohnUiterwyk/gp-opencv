@@ -10,12 +10,19 @@
  A symbolic regression fitness class
 ******************************************************************************/
 
+#include <vector>
+#include <opencv2/opencv.hpp>
 #include "GeneticProgram.h"
 #include "Fitness.h"
 #include "GPConfig.h"
+#include "ImageCase.h"
 
 #define TARPEIAN true // QCS 20120917
 #define DDL true //  QCS 20120930
+
+#ifndef MPI_ENABLED
+#define MPI_ENABLED
+#endif
 
 class SymbolicFitness : public Fitness
 {
@@ -24,15 +31,15 @@ class SymbolicFitness : public Fitness
       //training the programs
       static const int FITNESS_CASES;
 
-      double *xValues;
-      double *targetFunc;
+  	vector<ImageCase > cases;
 
-      //This constant controls the number of points to use for
-      //writing the test data out (x rang 0 (NUM_TEST_CASES-1))
-      static const int NUM_TEST_CASES;
       
       int generationCounter; // Used only to print out the progress
 
+      ImageCase loadimage(std::string path, std::string filename);
+
+	void EvaluateProg(GeneticProgram* prog, bool isTraining, int rank);
+	double TestProg(GeneticProgram* prog, ImageCase image);
    protected:
 
    public:
@@ -51,6 +58,9 @@ class SymbolicFitness : public Fitness
 		#ifdef MPI_ENABLED
 		void slaveProcess(GeneticProgram* pop);
 		void masterProcess(GeneticProgram* pop[], int popSize);
+		void slaveProcessMessage(GeneticProgram* prog, char* message, int msg_size, int rank);
+		void formatSlaveMessage(GeneticProgram* pop[], char* message, int msg_size, int popNum);
+		void parseSlaveResponse(GeneticProgram* pop[], char* message, int& process);
 		#endif
 	  
       /******************************************
@@ -59,6 +69,8 @@ class SymbolicFitness : public Fitness
        desired results. 
       *******************************************/
       void outputResults(GeneticProgram *program, const char *filename);
+
+
 };
 
 #endif

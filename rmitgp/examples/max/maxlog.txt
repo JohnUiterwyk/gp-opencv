@@ -1,122 +1,177 @@
 *****************************************
 Generation 0
-Time Thu Nov 22 15:59:32 2012
-BestFitness 242
-WorstFitness 255.999
-AverageFitness 254.89
-AverageDepth 3.443
-AverageSize 15.526
-StandardDeviationSize 18.3941
+Time Tue Aug 13 20:33:23 2013
+BestFitness 238.404
+WorstFitness 256
+AverageFitness 254.867
+AverageDepth 3.371
+AverageSize 15.42
+StandardDeviationSize 18.5757
 Evaluation 1000
 ParsimonyCoeff 0
 *****************************************
 Generation 1
-Time Thu Nov 22 15:59:32 2012
-BestFitness 242
+Time Tue Aug 13 20:33:23 2013
+BestFitness 238.404
 WorstFitness 255.992
-AverageFitness 254.49
-AverageDepth 3.83226
-AverageSize 17.1419
-StandardDeviationSize 18.5733
+AverageFitness 254.488
+AverageDepth 3.75742
+AverageSize 17.7174
+StandardDeviationSize 19.3884
 Evaluation 1775
 ParsimonyCoeff 0
 *****************************************
 Generation 2
-Time Thu Nov 22 15:59:32 2012
-BestFitness 217.5
-WorstFitness 255.998
-AverageFitness 253.946
-AverageDepth 4.64545
-AverageSize 22.1236
-StandardDeviationSize 19.8857
+Time Tue Aug 13 20:33:23 2013
+BestFitness 238.404
+WorstFitness 255.924
+AverageFitness 253.905
+AverageDepth 4.51091
+AverageSize 21.7273
+StandardDeviationSize 19.5136
 Evaluation 2325
 ParsimonyCoeff 0
 *****************************************
 Generation 3
-Time Thu Nov 22 15:59:32 2012
-BestFitness 212.906
-WorstFitness 255.984
-AverageFitness 252.769
-AverageDepth 5.32
-AverageSize 27.7385
-StandardDeviationSize 21.6727
+Time Tue Aug 13 20:33:23 2013
+BestFitness 236.805
+WorstFitness 255.75
+AverageFitness 252.536
+AverageDepth 5.34154
+AverageSize 30.1323
+StandardDeviationSize 20.4177
 Evaluation 2650
 ParsimonyCoeff 0
 *****************************************
 Generation 4
-Time Thu Nov 22 15:59:32 2012
-BestFitness 212.906
-WorstFitness 255.5
-AverageFitness 248.027
-AverageDepth 6.53
-AverageSize 46.28
-StandardDeviationSize 20.5222
+Time Tue Aug 13 20:33:23 2013
+BestFitness 232.19
+WorstFitness 255.75
+AverageFitness 248.58
+AverageDepth 6.6
+AverageSize 49.14
+StandardDeviationSize 19.1567
 Evaluation 2750
 ParsimonyCoeff 0
 *****************************************
 Generation 5
-Time Thu Nov 22 15:59:32 2012
-BestFitness 197.156
-WorstFitness 255.312
-AverageFitness 247.041
-AverageDepth 7.01
-AverageSize 47.38
-StandardDeviationSize 21.725
+Time Tue Aug 13 20:33:23 2013
+BestFitness 213.795
+WorstFitness 255.758
+AverageFitness 247.586
+AverageDepth 6.9
+AverageSize 51.36
+StandardDeviationSize 21.3211
 Evaluation 2850
 ParsimonyCoeff 0
 *****************************************
 Generation 6
-Time Thu Nov 22 15:59:32 2012
-BestFitness 197.156
-WorstFitness 255.893
-AverageFitness 245.595
-AverageDepth 7.52
-AverageSize 51.4
-StandardDeviationSize 23.1275
+Time Tue Aug 13 20:33:23 2013
+BestFitness 207.766
+WorstFitness 255.678
+AverageFitness 246.843
+AverageDepth 7.24
+AverageSize 51.6
+StandardDeviationSize 19.8666
 Evaluation 2950
 ParsimonyCoeff 0
 *****************************************
 Generation 7
-Time Thu Nov 22 15:59:32 2012
-BestFitness 111.625
-WorstFitness 255.893
-AverageFitness 242.377
-AverageDepth 7.87
-AverageSize 54.08
-StandardDeviationSize 23.7814
+Time Tue Aug 13 20:33:23 2013
+BestFitness 207.766
+WorstFitness 255.722
+AverageFitness 247.209
+AverageDepth 7.14
+AverageSize 48.82
+StandardDeviationSize 21.7938
 Evaluation 3050
 ParsimonyCoeff 0
 *****************************************
 Generation 8
-Time Thu Nov 22 15:59:32 2012
-BestFitness 36.8057
-WorstFitness 255.915
-AverageFitness 241.624
-AverageDepth 7.71
-AverageSize 54.78
-StandardDeviationSize 25.9151
+Time Tue Aug 13 20:33:23 2013
+BestFitness 207.766
+WorstFitness 255.562
+AverageFitness 246.412
+AverageDepth 7.52
+AverageSize 53.84
+StandardDeviationSize 20.5508
 Evaluation 3150
 ParsimonyCoeff 0
 *****************************************
 Generation 9
-Time Thu Nov 22 15:59:32 2012
-BestFitness 24.7744
-WorstFitness 255.883
-AverageFitness 228.136
-AverageDepth 8.7
-AverageSize 62.5
-StandardDeviationSize 29.9084
+Time Tue Aug 13 20:33:23 2013
+BestFitness 195.707
+WorstFitness 255.75
+AverageFitness 245.119
+AverageDepth 7.71
+AverageSize 56.24
+StandardDeviationSize 19.8228
 Evaluation 3250
 ParsimonyCoeff 0
 *****************************************
 Generation 10
-Time Thu Nov 22 15:59:32 2012
-BestFitness 0
-WorstFitness 255.883
-AverageFitness 178.346
-AverageDepth 9.67
-AverageSize 74.28
-StandardDeviationSize 36.6088
+Time Tue Aug 13 20:33:23 2013
+BestFitness 195.707
+WorstFitness 255.875
+AverageFitness 245.272
+AverageDepth 7.73
+AverageSize 56.06
+StandardDeviationSize 21.2499
 Evaluation 3350
+ParsimonyCoeff 0
+*****************************************
+Generation 11
+Time Tue Aug 13 20:33:23 2013
+BestFitness 183.505
+WorstFitness 255.75
+AverageFitness 242.883
+AverageDepth 8.07
+AverageSize 58.7
+StandardDeviationSize 21.6118
+Evaluation 3450
+ParsimonyCoeff 0
+*****************************************
+Generation 12
+Time Tue Aug 13 20:33:23 2013
+BestFitness 136.77
+WorstFitness 255.5
+AverageFitness 240.506
+AverageDepth 8.26
+AverageSize 59.86
+StandardDeviationSize 25.9449
+Evaluation 3550
+ParsimonyCoeff 0
+*****************************************
+Generation 13
+Time Tue Aug 13 20:33:23 2013
+BestFitness 46.3369
+WorstFitness 255.75
+AverageFitness 237.448
+AverageDepth 8.61
+AverageSize 62.58
+StandardDeviationSize 28.6067
+Evaluation 3650
+ParsimonyCoeff 0
+*****************************************
+Generation 14
+Time Tue Aug 13 20:33:23 2013
+BestFitness 46.3369
+WorstFitness 255.766
+AverageFitness 228.566
+AverageDepth 9.17
+AverageSize 71.18
+StandardDeviationSize 34.0295
+Evaluation 3750
+ParsimonyCoeff 0
+*****************************************
+Generation 15
+Time Tue Aug 13 20:33:23 2013
+BestFitness 0
+WorstFitness 255.5
+AverageFitness 200.976
+AverageDepth 9.95
+AverageSize 85.4
+StandardDeviationSize 41.1154
+Evaluation 3850
 ParsimonyCoeff 0
 Solution found!
