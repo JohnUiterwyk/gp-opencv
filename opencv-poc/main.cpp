@@ -17,14 +17,15 @@ int main( int argc, char** argv )
     moveWindow(window_name1,0,0);
 
     /// Load the source image
-    clock_t startReadTime = clock();
+    double readTime = (double)getTickCount();
     source_mat = imread( argv[1], CV_LOAD_IMAGE_GRAYSCALE );
-    cout << "Read time: " << double( clock() - startReadTime ) / (double)CLOCKS_PER_SEC<< " seconds." << endl;
+    readTime = ((double)getTickCount() - readTime)/getTickFrequency();
+    cout << "Read time: " << readTime << " seconds." << endl;
 
     imshow(window_name1,source_mat);
 
     //start runtime timer
-    clock_t startTime = clock();
+    double filterTime = (double)getTickCount();
 
     //blur the image
     Mat blur = source_mat.clone();
@@ -44,12 +45,16 @@ int main( int argc, char** argv )
     addWeighted( source_mat, alpha, output_mat, beta, 0.0, dst2);
 
     //stop runtime timer
-    cout << "filter time: " << double( clock() - startTime ) / (double)CLOCKS_PER_SEC<< " seconds." << endl;
+    filterTime = ((double)getTickCount() - filterTime)/getTickFrequency();
+    cout << "Filter time: " << filterTime << " seconds." << endl;
+
+    //cout << "Tick frequency "<< std::fixed  << getTickFrequency() <<endl;
 
     //create second window and output result
     namedWindow( window_name2, WINDOW_AUTOSIZE );
     imshow(window_name2,dst2);
     moveWindow(window_name2,source_mat.cols,0);
+
 
     //wait for user to press a key
     waitKey();
