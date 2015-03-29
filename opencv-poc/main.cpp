@@ -32,51 +32,53 @@ int main( int argc, char** argv )
     //start runtime timer
     double filterTime = (double)getTickCount();
 
-    int top = 0;
+    int top = 90000;
     for(;;)
     {
+        Mat input = source_mat;
+        Mat output = source_mat.clone();
+        int depth = rand()%7+1;
+        int function = 0;
+        for(int i= 0;i<depth;i++) {
+            Mat working;
+            function = rand();
+            switch (function%3) {
+                case 0:
+                    GaussianBlur(input, working, Size(rand() % 100 * 2 + 1, rand() % 100 * 2 + 1), 0, 0);
+                    output = working;
+                    break;
+                case 1:
+                    Sobel(input, working, CV_8U, rand()%2+1, rand()%3);
+                    output = working;
+                    break;
+                case 2:
+                    working = input > rand() % 255;
+                    output = working;
+                    break;
 
-        int i = rand();
 
-//        switch(rand()%3)
-//        {
-//            case 0:
-//                ;
-//
-//        }
-
-        //blur the image
-        Mat blur = source_mat.clone();
-        GaussianBlur( source_mat, blur, Size( rand()%45*2+1, rand()%45*2+1 ), 0, 0 );
-
-        //Mat sobelx;
-        //Sobel(blur, sobelx, CV_32F, 1, 0);
-
-        //simple threshhold
-        Mat img_bw = blur > rand()%255 ;
-        output_mat =  img_bw;
-
-        //overlay on the source
-        Mat dst2;
-        double alpha = 0.5; double beta;
-        beta = ( 1.0 - alpha );
-        addWeighted( source_mat, alpha, output_mat, beta, 0.0, dst2);
+            }
+            input = output;
+        }
+//        //overlay on the source
+        Mat dst2 = source_mat.clone();
+        addWeighted( source_mat, 0.5, output, 0.5, 0.0, dst2);
 
         //show test image
-        testWindow.showImage(dst2);
+        testWindow.showImage(output);
 
 
         //output score
         Mat diff_mat;
-        cv::compare(truth_mat, output_mat, diff_mat, cv::CMP_EQ);
+        cv::compare(truth_mat, output, diff_mat, cv::CMP_NE);
         int score =  cv::countNonZero(diff_mat);
-        if(score >= top)
+        if(score <= top)
         {
-            cout << "score is "<< score << endl;
+            cout << "errors: "<< score << " depth:"<< depth << " func:" << function%3 << endl;
             top = score;
             //overlay on the source
             Mat leader_mat;
-            addWeighted( truth_mat,0.5 ,cv::Scalar::all(255) - diff_mat, 0.5, 0.0, leader_mat);
+            addWeighted( truth_mat,0.5 ,output, 0.5, 0.0, leader_mat);
 
 
             leaderWindow.showImage(leader_mat);
