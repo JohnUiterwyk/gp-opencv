@@ -33,6 +33,7 @@ int main( int argc, char** argv )
     double filterTime = (double)getTickCount();
 
     int top = 90000;
+    int count = 0;
     for(;;)
     {
         Mat input = source_mat;
