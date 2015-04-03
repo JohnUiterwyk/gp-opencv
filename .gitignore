@@ -1,1 +1,6 @@
 gsl-1.16
+*.o
+*.a
+rmitgp/examples/symbolic/symbolicgp
+rmitgp/examples/symbolic2/symbolic2
+symbolicgp
