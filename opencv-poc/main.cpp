@@ -2,6 +2,7 @@
 #include "opencv2/highgui/highgui.hpp"
 #include "OpenCVWindow.h"
 #include "Stopwatch.h"
+#include "OpenCVFilters.h"
 #include <iostream>
 #include <cmath>
 #include <cstdlib>
@@ -16,6 +17,7 @@ OpenCVWindow truthWindow("Ground truth",300,300);
 OpenCVWindow testWindow("Current Image",300,300);
 OpenCVWindow leaderWindow("Leader Image",300,300);
 OpenCVWindow leaderDiffWindow("Leader Diff",300,300);
+
 
 int main( int argc, char** argv )
 {
@@ -68,6 +70,7 @@ int main( int argc, char** argv )
     //Setup stopwatch
     Stopwatch appTimer(true);
     Stopwatch searchTimer(true);
+    OpenCVFilters filter = OpenCVFilters();
 
     double best = 101;
     int size = 90000;
@@ -82,43 +85,32 @@ int main( int argc, char** argv )
         int function = 0;
         int rand1 = 0;
         int rand2 = 0;
-        ostringstream log;;
+        ostringstream log;
 
         for(int i= 0;i<depth;i++) {
-            Mat working;
             function = rand();
             rand1 = rand();
             rand2 = rand();
 
-            switch (function%4) {
+            switch (function%5) {
                 case 0:
-                    log << "Gaussian("<< rand1 % 100 * 2 + 1 << ","<< rand2 % 100 * 2 + 1 <<"); ";
-                    cv::GaussianBlur(input, working, Size(rand1 % 100 * 2 + 1, rand2 % 100 * 2 + 1), 0, 0);
-                    output = working;
+
+                    output = filter.Gaussian(input,rand(),rand());
                     break;
                 case 1:
-                    log << "Sobel("<< rand1%2+1 << ","<< rand2%3 <<"); ";
-                    cv::Sobel(input, working, CV_8U, rand1%2+1, rand2%3);
-                    output = working;
+                    output = filter.Sobel(input,rand1,rand2);
                     break;
                 case 2:
-                    log << "Threshold("<< (rand1 % 128) <<"); ";
-                    working = input > rand1 % 128;
-                    output = working;
+                    output = filter.Threshold(input,rand1,rand2);
                     break;
                 case 3:
-                    log << "Bilateral("<< (rand1%300) <<","<<(rand2%300)<<"); ";
-                    cv::bilateralFilter(input, working,5,(rand1%300),(rand2%300));
-                    input = working;
-                    convertScaleAbs( input, working );
-                    output = working;
+                    output = filter.Bilateral(input,rand1,rand2);
                     break;
                 case 4:
-                    log << "Laplacian(kernel_size="<< (rand1%3*2+1) <<"); ";
-                    cv::Laplacian(input, working,CV_16S,rand1%15*2+1,1,0,BORDER_DEFAULT);
-                    input = working;
-                    convertScaleAbs( input, working );
-                    output = working;
+                    output = filter.Erosion(input,rand1,rand2);
+                    break;
+                case 5:
+                    output = filter.Laplacian(input,rand1,rand2);
                     break;
 
 
@@ -128,11 +120,7 @@ int main( int argc, char** argv )
 
 
         //one last threshold
-        rand1 = rand();
-        log << "Threshold("<< (rand1 % 255) <<"); ";
-        Mat working;
-        working = input > rand1 % 255;
-        output = working;
+        output = filter.Threshold(input,rand(),rand());
 
 //        //overlay on the source
         Mat dst2 = source_mat.clone();
@@ -144,10 +132,8 @@ int main( int argc, char** argv )
 
 
         //output score
-        Mat diff_mat;
-        cv::compare(truth_mat, output, diff_mat, cv::CMP_EQ);
-        int nonzero = cv::countNonZero(diff_mat);
-        double score = 100* (size - (double)nonzero)/size;
+        double score = filter.GetFitnessScore(output, truth_mat);
+
         if(score < best)
         {
             cout << fixed;
@@ -168,7 +154,7 @@ int main( int argc, char** argv )
 
             testWindow.showImage(output);
             leaderWindow.showImage(output);
-            leaderDiffWindow.showImage(diff_mat);
+            leaderDiffWindow.showImage(filter.working);
             searchTimer.Stop();
             searchTimer.Start(true);
         };

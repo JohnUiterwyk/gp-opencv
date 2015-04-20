@@ -6,5 +6,5 @@ include_directories( ${OpenCV_INCLUDE_DIRS} )
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
 set(SOURCE_FILES main.cpp)
-add_executable(opencv-poc ${SOURCE_FILES} OpenCVWindow.cpp OpenCVWindow.h Stopwatch.cpp Stopwatch.h)
+add_executable(opencv-poc ${SOURCE_FILES} OpenCVWindow.cpp OpenCVWindow.h Stopwatch.cpp Stopwatch.h OpenCVFilters.cpp OpenCVFilters.h)
 target_link_libraries( opencv-poc ${OpenCV_LIBS} )
