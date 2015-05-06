@@ -25,7 +25,8 @@ cv::Mat OpenCVFilters::Sobel(cv::Mat input, int x,int y)
 }
 cv::Mat OpenCVFilters::Threshold(cv::Mat input, int x,int y)
 {
-    x = x % 128;
+    x = (int)(((double)x/RAND_MAX) * 256);
+    cout << x << endl;
     this->working = input  > x;
     return this->working;
 }

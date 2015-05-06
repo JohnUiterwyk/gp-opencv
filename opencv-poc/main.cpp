@@ -72,98 +72,124 @@ int main( int argc, char** argv )
     Stopwatch searchTimer(true);
     OpenCVFilters filter = OpenCVFilters();
 
-    double best = 101;
-    int size = 90000;
-    int count = 0;
+    double localBestScore = 100;
+    int maxSearchCount = 1000;
     int maxDepth = 5;
-    for(;;)
+    long step = RAND_MAX/100;
+    Mat best;
+    for(long i = 0;i<RAND_MAX;i+=step)
     {
-        count++;
         Mat input = source_mat;
         Mat output = source_mat.clone();
-        int depth = rand()%maxDepth+1;
-        int function = 0;
-        int rand1 = 0;
-        int rand2 = 0;
-        ostringstream log;
-
-        for(int i= 0;i<depth;i++) {
-            function = rand();
-            rand1 = rand();
-            rand2 = rand();
-
-            switch (function%5) {
-                case 0:
-
-                    output = filter.Gaussian(input,rand(),rand());
-                    break;
-                case 1:
-                    output = filter.Sobel(input,rand1,rand2);
-                    break;
-                case 2:
-                    output = filter.Threshold(input,rand1,rand2);
-                    break;
-                case 3:
-                    output = filter.Bilateral(input,rand1,rand2);
-                    break;
-                case 4:
-                    output = filter.Erosion(input,rand1,rand2);
-                    break;
-                case 5:
-                    output = filter.Laplacian(input,rand1,rand2);
-                    break;
-
-
-            }
-            input = output;
-        }
-
-
-        //one last threshold
-        output = filter.Threshold(input,rand(),rand());
-
-//        //overlay on the source
-        Mat dst2 = source_mat.clone();
-        addWeighted( source_mat, 0.5, output, 0.5, 0.0, dst2);
-
-        //show test image
+        output = filter.Threshold(input,i,0);
         testWindow.showImage(output);
 
-
-
-        //output score
+        //get score
         double score = filter.GetFitnessScore(output, truth_mat);
-
-        if(score < best)
+        if(score < localBestScore)
         {
-            cout << fixed;
-            cout << "### New Winner: ###" << endl;
-            cout << "Error rate: "<< score << "%" <<endl;
-            cout << "Functions: "<< log.str() << endl;
-            cout << "Depth: "<< depth  << endl;
-            best = score;
-            //overlay on the source
-            Mat leader_mat;
-            addWeighted( truth_mat,0.5 ,output, 0.5, 0.0, leader_mat);
-
-            cout << "Elapseds time: " << appTimer.GetTotalWallTime() << " seconds." << endl;
-            cout << "Search time: " << searchTimer.GetTotalWallTime() << " seconds." << endl;
-            cout << "FPS: " << count/appTimer.GetTotalWallTime() <<  endl;
-            cout << "Count: " << count <<  endl;
-            cout << endl;
-
-            testWindow.showImage(output);
+            localBestScore = score;
+            best = output;
             leaderWindow.showImage(output);
-            leaderDiffWindow.showImage(filter.working);
-            searchTimer.Stop();
-            searchTimer.Start(true);
-        };
+        }
 
-
-        //create second window and output result
-       if( waitKey(16) != -1)
+        if( waitKey(16) != -1)
            break;
     }
+    //GeneticVision
+    //
+//    double best = 101;
+//    int size = 90000;
+//    int count = 0;
+//    int maxDepth = 5;
+//    for(;;)
+//    {
+//        count++;
+//        Mat input = source_mat;
+//        Mat output = source_mat.clone();
+//        int depth = rand()%maxDepth+1;
+//        int function = 0;
+//        int rand1 = 0;
+//        int rand2 = 0;
+//        ostringstream log;
+//
+//        for(int i= 0;i<depth;i++) {
+//            function = rand();
+//            rand1 = rand();
+//            rand2 = rand();
+//
+//            switch (function%5) {
+//                case 0:
+//
+//                    output = filter.Gaussian(input,rand(),rand());
+//                    break;
+//                case 1:
+//                    output = filter.Sobel(input,rand1,rand2);
+//                    break;
+//                case 2:
+//                    output = filter.Threshold(input,rand1,rand2);
+//                    break;
+//                case 3:
+//                    output = filter.Bilateral(input,rand1,rand2);
+//                    break;
+//                case 4:
+//                    output = filter.Erosion(input,rand1,rand2);
+//                    break;
+//                case 5:
+//                    output = filter.Laplacian(input,rand1,rand2);
+//                    break;
+//
+//
+//            }
+//            input = output;
+//        }
+//
+//
+//        //one last threshold
+//        output = filter.Threshold(input,rand(),rand());
+//
+////        //overlay on the source
+//        Mat dst2 = source_mat.clone();
+//        addWeighted( source_mat, 0.5, output, 0.5, 0.0, dst2);
+//
+//        //show test image
+//        testWindow.showImage(output);
+//
+//
+//
+//        //output score
+//        double score = filter.GetFitnessScore(output, truth_mat);
+//
+//        if(score < best)
+//        {
+//            cout << fixed;
+//            cout << "### New Winner: ###" << endl;
+//            cout << "Error rate: "<< score << "%" <<endl;
+//            cout << "Functions: "<< log.str() << endl;
+//            cout << "Depth: "<< depth  << endl;
+//            best = score;
+//            //overlay on the source
+//            Mat leader_mat;
+//            addWeighted( truth_mat,0.5 ,output, 0.5, 0.0, leader_mat);
+//
+//            cout << "Elapseds time: " << appTimer.GetTotalWallTime() << " seconds." << endl;
+//            cout << "Search time: " << searchTimer.GetTotalWallTime() << " seconds." << endl;
+//            cout << "FPS: " << count/appTimer.GetTotalWallTime() <<  endl;
+//            cout << "Count: " << count <<  endl;
+//            cout << endl;
+//
+//            testWindow.showImage(output);
+//            leaderWindow.showImage(output);
+//            leaderDiffWindow.showImage(filter.working);
+//            searchTimer.Stop();
+//            searchTimer.Start(true);
+//        };
+//
+//
+//        //create second window and output result
+//       if( waitKey(16) != -1)
+//           break;
+//    }
 
     waitKey(0);
 
